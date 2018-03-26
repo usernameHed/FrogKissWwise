@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="128">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Aurélien Demey\Documents\WwiseProjects\Wwise Frog Kiss\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Aurélien Demey\Documents\WwiseProjects\Wwise Frog Kiss\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Aurélien Demey\Documents\WwiseProjects\Wwise Frog Kiss\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>D:\GIT\FrogKissWwise\Wwise Frog Kiss\</ProjectRoot>
+		<SourceFilesRoot>D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\GIT\FrogKissWwise\Wwise Frog Kiss\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Aurélien Demey\Documents\WwiseProjects\Wwise Frog Kiss\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\GIT\FrogKissWwise\Wwise Frog Kiss\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -36,6 +36,10 @@
 				<File Id="312959866" Language="SFX">
 					<ShortName>Sheep_Cartoon_Baa_4.wav</ShortName>
 					<Path>SFX\Sheep_Cartoon_Baa_4_1C9C67B2.wem</Path>
+				</File>
+				<File Id="406653414" Language="SFX">
+					<ShortName>loop vent.wav</ShortName>
+					<Path>SFX\loop vent_F17FB28C.wem</Path>
 				</File>
 				<File Id="741145507" Language="SFX">
 					<ShortName>menu_validation.wav</ShortName>
