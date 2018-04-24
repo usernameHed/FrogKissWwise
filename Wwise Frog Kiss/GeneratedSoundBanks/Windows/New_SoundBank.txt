@@ -1,8 +1,10 @@
 Event	ID	Name			Wwise Object Path	Notes
+	51444113	Play_Music_placeholder			\Default Work Unit\Play_Music_placeholder	
 	1350749805	Stop_vent			\Default Work Unit\Stop_vent	
 	1640874226	Stop_LOOP			\Default Work Unit\Stop_LOOP	
 	3394929946	Play_sfx3D			\Default Work Unit\Play_sfx3D	
 	3411707765	Play_sfx2D			\Default Work Unit\Play_sfx2D	
+	3761401043	Stop_Music_placeholder			\Default Work Unit\Stop_Music_placeholder	
 	4058155063	Play_vent			\Default Work Unit\Play_vent	
 	4266239556	Play_LOOP			\Default Work Unit\Play_LOOP	
 
@@ -11,6 +13,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	28040161	loop 1	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\loop 1_F17FB28C.wem		\Interactive Music Hierarchy\Music placeholder\LOOP\loop 1\loop 1\loop 1		2712724
+	219220367	triov1	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\triov1_F17FB28C.wem		\Interactive Music Hierarchy\Music placeholder\Music placeholder\trio\triov1		24131584
 	312959866	Sheep_Cartoon_Baa_4	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\Sheep_Cartoon_Baa_4_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\sfx 3D\Sheep_Cartoon_Baa_4		171072
 	406653414	vent	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\loop vent_F17FB28C.wem		\Actor-Mixer Hierarchy\Frog Kiss\vent\vent		7455832
 	741145507	menu_validation	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\menu_validation_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\sfx 2D\menu_validation		159724

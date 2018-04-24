@@ -88,6 +88,34 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Music_placeholder" ID="{95FE3C18-C1FE-4A0C-A45C-08AF89185A4B}">
+					<ChildrenList>
+						<Action Name="" ID="{38572C9D-2F18-4293-B595-628D399AFEC9}" ShortID="931396240">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music placeholder" ID="{E263ECB4-7ACD-4683-A8AD-069404737F54}" WorkUnitID="{24441BEA-7D03-40CF-9A6C-232D396C0874}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Music_placeholder" ID="{3E7E941F-A173-449E-94E3-F2FB4F50C0B2}">
+					<ChildrenList>
+						<Action Name="" ID="{D63FE76A-1EC3-43EA-825E-70CD42C498C1}" ShortID="506680838">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music placeholder" ID="{E263ECB4-7ACD-4683-A8AD-069404737F54}" WorkUnitID="{24441BEA-7D03-40CF-9A6C-232D396C0874}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
