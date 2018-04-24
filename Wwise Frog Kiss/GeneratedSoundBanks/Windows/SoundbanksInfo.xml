@@ -1,25 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="128">
 	<RootPaths>
-		<ProjectRoot>D:\GIT\FrogKissWwise\Wwise Frog Kiss\</ProjectRoot>
-		<SourceFilesRoot>D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>D:\GIT\FrogKissWwise\Wwise Frog Kiss\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>D:\Cloud\WORK\JMIN\GIT\FrogKiss\FrogKissWwise\Wwise Frog Kiss\</ProjectRoot>
+		<SourceFilesRoot>D:\Cloud\WORK\JMIN\GIT\FrogKiss\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Cloud\WORK\JMIN\GIT\FrogKiss\FrogKissWwise\Wwise Frog Kiss\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\GIT\FrogKissWwise\Wwise Frog Kiss\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\Cloud\WORK\JMIN\GIT\FrogKiss\FrogKissWwise\Wwise Frog Kiss\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX">
-			<ObjectPath>Init</ObjectPath>
-			<ShortName>Init</ShortName>
-			<Path>Init.bnk</Path>
-		</SoundBank>
-		<SoundBank Id="4072029455" Language="SFX">
-			<ObjectPath>\SoundBanks\Default Work Unit\New_SoundBank</ObjectPath>
-			<ShortName>New_SoundBank</ShortName>
-			<Path>New_SoundBank.bnk</Path>
+		<SoundBank Id="919382353" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\New_Name</ObjectPath>
+			<ShortName>New_Name</ShortName>
+			<Path>New_Name.bnk</Path>
 			<IncludedEvents>
 				<Event Id="4266239556" Name="Play_LOOP" ObjectPath="\Events\Default Work Unit\Play_LOOP"/>
 				<Event Id="3411707765" Name="Play_sfx2D" ObjectPath="\Events\Default Work Unit\Play_sfx2D"/>
@@ -54,6 +49,11 @@
 					<Path>SFX\bridge_F17FB28C.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

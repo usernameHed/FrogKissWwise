@@ -2,7 +2,7 @@ State Group	ID	Name			Wwise Object Path	Notes
 	69765534	musique			\Default Work Unit\musique	
 
 State	ID	Name	State Group			Notes
-	748895195	None	musique			
+	0	None	musique			
 	3987970508	loop_2	musique			
 	3987970511	loop_1	musique			
 
