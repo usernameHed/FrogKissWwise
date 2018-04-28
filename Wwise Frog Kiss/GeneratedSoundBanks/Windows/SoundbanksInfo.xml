@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="128">
 	<RootPaths>
-		<ProjectRoot>D:\Cloud\WORK\JMIN\GIT\FrogKiss\FrogKissWwise\Wwise Frog Kiss\</ProjectRoot>
-		<SourceFilesRoot>D:\Cloud\WORK\JMIN\GIT\FrogKiss\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>D:\Cloud\WORK\JMIN\GIT\FrogKiss\FrogKissWwise\Wwise Frog Kiss\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Hed\Desktop\FrogKiss-wwise-musictransition-done6eb30525c8507a5f3bb22f18439f6c76c6cfed90\FrogKiss-6eb30525c8507a5f3bb22f18439f6c76c6cfed90\FrogKissWwise\Wwise Frog Kiss\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Hed\Desktop\FrogKiss-wwise-musictransition-done6eb30525c8507a5f3bb22f18439f6c76c6cfed90\FrogKiss-6eb30525c8507a5f3bb22f18439f6c76c6cfed90\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Hed\Desktop\FrogKiss-wwise-musictransition-done6eb30525c8507a5f3bb22f18439f6c76c6cfed90\FrogKiss-6eb30525c8507a5f3bb22f18439f6c76c6cfed90\FrogKissWwise\Wwise Frog Kiss\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\Cloud\WORK\JMIN\GIT\FrogKiss\FrogKissWwise\Wwise Frog Kiss\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Hed\Desktop\FrogKiss-wwise-musictransition-done6eb30525c8507a5f3bb22f18439f6c76c6cfed90\FrogKiss-6eb30525c8507a5f3bb22f18439f6c76c6cfed90\FrogKissWwise\Wwise Frog Kiss\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -17,16 +17,22 @@
 			<Path>New_Name.bnk</Path>
 			<IncludedEvents>
 				<Event Id="4266239556" Name="Play_LOOP" ObjectPath="\Events\Default Work Unit\Play_LOOP"/>
+				<Event Id="51444113" Name="Play_Music_placeholder" ObjectPath="\Events\Default Work Unit\Play_Music_placeholder"/>
 				<Event Id="3411707765" Name="Play_sfx2D" ObjectPath="\Events\Default Work Unit\Play_sfx2D"/>
 				<Event Id="3394929946" Name="Play_sfx3D" ObjectPath="\Events\Default Work Unit\Play_sfx3D"/>
 				<Event Id="4058155063" Name="Play_vent" ObjectPath="\Events\Default Work Unit\Play_vent"/>
 				<Event Id="1640874226" Name="Stop_LOOP" ObjectPath="\Events\Default Work Unit\Stop_LOOP"/>
+				<Event Id="3761401043" Name="Stop_Music_placeholder" ObjectPath="\Events\Default Work Unit\Stop_Music_placeholder"/>
 				<Event Id="1350749805" Name="Stop_vent" ObjectPath="\Events\Default Work Unit\Stop_vent"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="28040161" Language="SFX">
 					<ShortName>loop 1.wav</ShortName>
 					<Path>SFX\loop 1_F17FB28C.wem</Path>
+				</File>
+				<File Id="219220367" Language="SFX">
+					<ShortName>triov1.wav</ShortName>
+					<Path>SFX\triov1_F17FB28C.wem</Path>
 				</File>
 				<File Id="312959866" Language="SFX">
 					<ShortName>Sheep_Cartoon_Baa_4.wav</ShortName>
