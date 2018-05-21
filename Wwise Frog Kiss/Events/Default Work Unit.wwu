@@ -3,34 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{9F383271-D774-4D0B-AB5E-304080A2F4DA}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_vent" ID="{7AED14D5-DE34-4607-ACA4-E750C41A14BF}">
-					<ChildrenList>
-						<Action Name="" ID="{6C96A8F5-1417-40BB-B120-606213DD178B}" ShortID="16034106">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="vent" ID="{1D131021-CC77-411C-99A7-CE43028845B7}" WorkUnitID="{FDF87CCA-B268-48D5-965B-F36042191A27}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Stop_vent" ID="{E4DFA8E9-9A33-4C70-95CB-BCB04DDDE283}">
-					<ChildrenList>
-						<Action Name="" ID="{010B0109-1CBF-4310-8F45-ADA149207705}" ShortID="1011453627">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="vent" ID="{1D131021-CC77-411C-99A7-CE43028845B7}" WorkUnitID="{FDF87CCA-B268-48D5-965B-F36042191A27}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_sfx2D" ID="{A6685703-1413-4ECB-B3FF-EDB44743296D}">
 					<ChildrenList>
 						<Action Name="" ID="{5578BA13-09E1-47E9-8AB0-F53FBCBDEA6D}" ShortID="285379475">
@@ -45,74 +17,105 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_sfx3D" ID="{2E83C665-9784-4090-8415-AA46868AB063}">
+				<Event Name="Play_Danse" ID="{64EFAA17-5EAB-4C9B-9821-0817509AF243}">
 					<ChildrenList>
-						<Action Name="" ID="{E98164F4-3FF1-4DEE-8069-87754AE87C80}" ShortID="669826321">
+						<Action Name="" ID="{4B54BB30-5EDE-45AB-AB87-86EEE8E36BAC}" ShortID="128252524">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MusicLoop" ID="{17EFA313-0BD0-4B2A-851A-432BC76DFBA1}" WorkUnitID="{E6C31DEA-BA1A-49C4-AE4E-50F36A9AE479}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{1D916B36-C550-47A3-92EE-412186E2BD62}" ShortID="587536403">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Sheep_Cartoon_Baa_4" ID="{099D2F3C-23A9-4918-9E88-97B65C76EC96}" WorkUnitID="{FDF87CCA-B268-48D5-965B-F36042191A27}"/>
+									<ObjectRef Name="Danse" ID="{D503C71C-264A-4FC0-9542-5A7E793E7269}" WorkUnitID="{24441BEA-7D03-40CF-9A6C-232D396C0874}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_LOOP" ID="{A8462AE0-92E9-4080-9F6E-AE91783BA4E3}">
+				<Event Name="Play_ambiance" ID="{846E88F9-2CE6-4C25-A2FE-D630F074F4B9}">
 					<ChildrenList>
-						<Action Name="" ID="{7CDDCE0E-3A1B-4D6C-A122-078595F3C8AE}" ShortID="894112146">
+						<Action Name="" ID="{869C53D1-A9AC-4F4D-8348-677EB6088C02}" ShortID="881412349">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ambiance" ID="{9725918B-FB55-4F76-B50B-6B2A6AED7793}" WorkUnitID="{FDF87CCA-B268-48D5-965B-F36042191A27}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BackHome" ID="{38EAFC51-822D-4847-AD96-593527318CF3}">
+					<ChildrenList>
+						<Action Name="" ID="{51C66FC6-EF4E-4C56-B185-B8D3E400F938}" ShortID="118573020">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MusicLoop" ID="{17EFA313-0BD0-4B2A-851A-432BC76DFBA1}" WorkUnitID="{E6C31DEA-BA1A-49C4-AE4E-50F36A9AE479}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{EBA0C13F-1585-4C66-9D20-008811AB5F6F}" ShortID="597415886">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="LOOP" ID="{AE159AC2-7B83-455A-B4CF-6CBB532B087A}" WorkUnitID="{24441BEA-7D03-40CF-9A6C-232D396C0874}"/>
+									<ObjectRef Name="BackHome" ID="{13FBC876-890F-47E6-99EF-09C981096102}" WorkUnitID="{24441BEA-7D03-40CF-9A6C-232D396C0874}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Stop_LOOP" ID="{E4A243CE-6FDA-427D-BEE6-6A0461406ACF}">
+				<Event Name="Play_pas" ID="{0460A050-41DF-4E01-9E5A-C2FD0399C2CB}">
 					<ChildrenList>
-						<Action Name="" ID="{009469DB-0673-43F0-8C54-2FB36D713424}" ShortID="115759943">
+						<Action Name="" ID="{9762955C-A3C1-4CA1-9ED0-99CBB4693A74}" ShortID="170202432">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="pas" ID="{12F54DCB-5D19-41E5-A2C5-33FB10D52137}" WorkUnitID="{FDF87CCA-B268-48D5-965B-F36042191A27}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_ambiance" ID="{9E6711BD-0680-41F2-B6C0-0935181DAEC5}">
+					<ChildrenList>
+						<Action Name="" ID="{FC37A978-53EC-407D-A823-42D1EF145BD8}" ShortID="737138060">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ambiance" ID="{9725918B-FB55-4F76-B50B-6B2A6AED7793}" WorkUnitID="{FDF87CCA-B268-48D5-965B-F36042191A27}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_all" ID="{23C10DA7-D768-420A-8F63-D62833A1540C}">
+					<ChildrenList>
+						<Action Name="" ID="{C58B344F-0A80-4C03-B1DC-3B60D724CBBF}" ShortID="866254760">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
 								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="LOOP" ID="{AE159AC2-7B83-455A-B4CF-6CBB532B087A}" WorkUnitID="{24441BEA-7D03-40CF-9A6C-232D396C0874}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Music_placeholder" ID="{95FE3C18-C1FE-4A0C-A45C-08AF89185A4B}">
-					<ChildrenList>
-						<Action Name="" ID="{38572C9D-2F18-4293-B595-628D399AFEC9}" ShortID="931396240">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Music placeholder" ID="{E263ECB4-7ACD-4683-A8AD-069404737F54}" WorkUnitID="{24441BEA-7D03-40CF-9A6C-232D396C0874}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Stop_Music_placeholder" ID="{3E7E941F-A173-449E-94E3-F2FB4F50C0B2}">
-					<ChildrenList>
-						<Action Name="" ID="{D63FE76A-1EC3-43EA-825E-70CD42C498C1}" ShortID="506680838">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Music placeholder" ID="{E263ECB4-7ACD-4683-A8AD-069404737F54}" WorkUnitID="{24441BEA-7D03-40CF-9A6C-232D396C0874}"/>
-								</Reference>
-							</ReferenceList>
+							<ReferenceList/>
 						</Action>
 					</ChildrenList>
 				</Event>

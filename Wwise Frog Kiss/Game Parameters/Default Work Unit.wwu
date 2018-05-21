@@ -3,7 +3,21 @@
 	<GameParameters>
 		<WorkUnit Name="Default Work Unit" ID="{F71DCA4E-3ACF-4E02-8C33-8F6E9BD58B45}" PersistMode="Standalone">
 			<ChildrenList>
-				<GameParameter Name="pitch" ID="{FA33360D-5DF9-4CF5-AD73-9D6F548B971A}"/>
+				<GameParameter Name="bird_time" ID="{E28196F2-2CE0-441D-9A81-4D612513D26E}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="pas_feuilles_vol" ID="{3A2077CF-2754-4020-ADDF-75F93765B171}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="70"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="pas_dur_vol" ID="{BF6BA975-C282-4C0A-87A9-7ED786D8A021}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

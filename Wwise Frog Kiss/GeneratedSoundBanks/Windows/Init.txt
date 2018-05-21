@@ -3,8 +3,8 @@ State Group	ID	Name			Wwise Object Path	Notes
 
 State	ID	Name	State Group			Notes
 	0	None	musique			
-	3987970508	loop_2	musique			
-	3987970511	loop_1	musique			
+	284317701	MusicNoLoop	musique			
+	2808630848	MusicLoop	musique			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	504532776	Brick			\Factory Reflect Acoustic Textures\Textures\Brick	

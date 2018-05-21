@@ -6,6 +6,7 @@
 				<ActorMixer Name="sfx 3D" ID="{CB202707-6141-40B4-9C58-86B1E7A12E8B}" ShortID="24278708">
 					<PropertyList>
 						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="Spatialization" Type="int16" Value="1"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -16,7 +17,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Sheep_Cartoon_Baa_4" ID="{099D2F3C-23A9-4918-9E88-97B65C76EC96}" ShortID="325231303">
+						<BlendContainer Name="pas" ID="{12F54DCB-5D19-41E5-A2C5-33FB10D52137}" ShortID="212561402">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
@@ -26,13 +27,597 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Sheep_Cartoon_Baa_4" ID="{191D3834-3169-413C-93B0-8734F14D87C0}" ShortID="312959866">
+								<RandomSequenceContainer Name="pas_dur" ID="{41F93BFC-AC33-4B07-ACE7-F77473BCF3F8}" ShortID="224109051">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{D49170F5-8E22-4428-8BB0-7ACA866A70C5}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="101"/>
+															<Property Name="Min" Type="Real64" Value="-101"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{A6BD03BE-5B73-46C9-890E-BFAE12A798FF}" ShortID="862614863">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="pas_dur_vol" ID="{BF6BA975-C282-4C0A-87A9-7ED786D8A021}" WorkUnitID="{F71DCA4E-3ACF-4E02-8C33-8F6E9BD58B45}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{6CB03AEF-8E64-42DD-9485-2C4FD7832FF5}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="pas_dur-001" ID="{7D0F1EC7-882E-4B2E-AA9C-EF06D5C0BEF6}" ShortID="1021731662">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="pas_dur-001" ID="{C375F893-9756-4F19-A3BD-A44FD862E9D2}" ShortID="481280554">
+													<Language>SFX</Language>
+													<AudioFile>pas_dur-001.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="pas_dur-001" ID="{C375F893-9756-4F19-A3BD-A44FD862E9D2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="pas_dur-002" ID="{1894BC98-391C-44E6-AB19-637736F53804}" ShortID="499317723">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="pas_dur-002" ID="{E3FB8D9A-2E69-405C-AE75-3F8BAD3139C5}" ShortID="881775451">
+													<Language>SFX</Language>
+													<AudioFile>pas_dur-002.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="pas_dur-002" ID="{E3FB8D9A-2E69-405C-AE75-3F8BAD3139C5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="pas_dur-003" ID="{9A366E31-B4F4-43F0-8F17-59134E4E7E4F}" ShortID="661234431">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="pas_dur-003" ID="{6345FE3E-0FCB-4174-8B88-DB13A57FA733}" ShortID="233355183">
+													<Language>SFX</Language>
+													<AudioFile>pas_dur-003.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="pas_dur-003" ID="{6345FE3E-0FCB-4174-8B88-DB13A57FA733}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="pas_dur-004" ID="{4DCC3F62-9141-401D-96F1-3C5F6A10E55F}" ShortID="578093658">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="pas_dur-004" ID="{05805287-144D-4270-B11A-A221B0428968}" ShortID="757589686">
+													<Language>SFX</Language>
+													<AudioFile>pas_dur-004.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="pas_dur-004" ID="{05805287-144D-4270-B11A-A221B0428968}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="pas_dur-005" ID="{033EA0CF-7906-4404-A35A-8F2DCDAA4311}" ShortID="654487939">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="pas_dur-005" ID="{CE32DC13-F8EA-48E9-81B6-E6596B5D9370}" ShortID="32673462">
+													<Language>SFX</Language>
+													<AudioFile>pas_dur-005.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="pas_dur-005" ID="{CE32DC13-F8EA-48E9-81B6-E6596B5D9370}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="pas_dur-006" ID="{A9016A9C-4B70-475B-A9E5-BECA26FFB813}" ShortID="339699089">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="pas_dur-006" ID="{7FB11311-B285-40E9-9EBB-6B74BD46D163}" ShortID="559635689">
+													<Language>SFX</Language>
+													<AudioFile>pas_dur-006.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="pas_dur-006" ID="{7FB11311-B285-40E9-9EBB-6B74BD46D163}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="pas_dur-007" ID="{12413B39-F274-4658-AC4A-D8F7CCF9C7DE}" ShortID="806176034">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="pas_dur-007" ID="{D32D5268-9FC7-4EDE-8D80-AA53BFF2E632}" ShortID="85305738">
+													<Language>SFX</Language>
+													<AudioFile>pas_dur-007.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="pas_dur-007" ID="{D32D5268-9FC7-4EDE-8D80-AA53BFF2E632}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="pas_dur-008" ID="{4C7C1DD6-7770-4C8F-A591-4BF9B9B2D5A3}" ShortID="31983464">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="pas_dur-008" ID="{72F44831-73EB-4F9B-8B64-DF7057882DA0}" ShortID="99459058">
+													<Language>SFX</Language>
+													<AudioFile>pas_dur-008.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="pas_dur-008" ID="{72F44831-73EB-4F9B-8B64-DF7057882DA0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="pas_dur-009" ID="{E6996A8D-F83C-42FE-B85E-C95211691FF0}" ShortID="408281367">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="pas_dur-009" ID="{474D073B-A055-4D45-B05E-04F41E9AD0EA}" ShortID="690750299">
+													<Language>SFX</Language>
+													<AudioFile>pas_dur-009.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="pas_dur-009" ID="{474D073B-A055-4D45-B05E-04F41E9AD0EA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="pas_dur-010" ID="{9E534D86-8695-4C4B-B5FC-7DCB7BABA9D5}" ShortID="273229025">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="pas_dur-010" ID="{4759F15E-05F2-4F86-B16E-20AF93B70A8F}" ShortID="336407299">
+													<Language>SFX</Language>
+													<AudioFile>pas_dur-010.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="pas_dur-010" ID="{4759F15E-05F2-4F86-B16E-20AF93B70A8F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="pas_feuilles" ID="{7F516A51-2415-4618-BDAA-C1E5839D40D3}" ShortID="566040702">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{B7069FFD-CEF3-47B0-8FE4-9AF77CE5B417}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="126"/>
+															<Property Name="Min" Type="Real64" Value="-126"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{2F3FCED1-6219-4FAA-81CA-083F63C910A6}" ShortID="300933368">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="pas_feuilles_vol" ID="{3A2077CF-2754-4020-ADDF-75F93765B171}" WorkUnitID="{F71DCA4E-3ACF-4E02-8C33-8F6E9BD58B45}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{03B94D73-8C71-4F8F-9E13-E851588C1005}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="pas_feuilles-001" ID="{83D31DEB-A298-49FC-81CD-8F42809F875F}" ShortID="972026227">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="pas_feuilles-001" ID="{3BD9CEB9-30CC-4721-8E9B-45A2293095EC}" ShortID="804594351">
+													<Language>SFX</Language>
+													<AudioFile>pas_feuilles-001.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="pas_feuilles-001" ID="{3BD9CEB9-30CC-4721-8E9B-45A2293095EC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="pas_feuilles-002" ID="{C758395A-D537-4FF5-969B-69A001C1D7A4}" ShortID="224215920">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="pas_feuilles-002" ID="{AEC7CE46-3398-4452-9E20-8721B7C390F4}" ShortID="631898275">
+													<Language>SFX</Language>
+													<AudioFile>pas_feuilles-002.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="pas_feuilles-002" ID="{AEC7CE46-3398-4452-9E20-8721B7C390F4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="pas_feuilles-003" ID="{DE707458-5CB2-41A6-A6FA-01C301A2AC8B}" ShortID="435258187">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="pas_feuilles-003" ID="{5173C86C-0D19-461F-9A15-03F72291E39A}" ShortID="220997832">
+													<Language>SFX</Language>
+													<AudioFile>pas_feuilles-003.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="pas_feuilles-003" ID="{5173C86C-0D19-461F-9A15-03F72291E39A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="pas_feuilles-004" ID="{198F4F3F-4488-49A6-BDE6-0A6DB3206AC1}" ShortID="929093678">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="pas_feuilles-004" ID="{4866509F-4C70-4049-968E-E5AE8D57571F}" ShortID="112924468">
+													<Language>SFX</Language>
+													<AudioFile>pas_feuilles-004.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="pas_feuilles-004" ID="{4866509F-4C70-4049-968E-E5AE8D57571F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="pas_feuilles-005" ID="{B9FF96F0-945A-456F-81EC-2A83F96BC426}" ShortID="890973081">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="pas_feuilles-005" ID="{4224AC64-640E-415B-96BE-F36F51AA818D}" ShortID="950020302">
+													<Language>SFX</Language>
+													<AudioFile>pas_feuilles-005.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="pas_feuilles-005" ID="{4224AC64-640E-415B-96BE-F36F51AA818D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="pas_feuilles-006" ID="{83C50326-BE11-425E-9F3A-45781DA65A36}" ShortID="248325036">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="pas_feuilles-006" ID="{D1476AA8-0663-431B-A6DC-E3F0D853544E}" ShortID="37021032">
+													<Language>SFX</Language>
+													<AudioFile>pas_feuilles-006.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="pas_feuilles-006" ID="{D1476AA8-0663-431B-A6DC-E3F0D853544E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="pas_feuilles-007" ID="{5F785F76-1292-4B23-8772-CFCD1C68C3DD}" ShortID="940890842">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="pas_feuilles-007" ID="{8A8BE9A7-0651-48B9-B4A1-61A250B2B848}" ShortID="704683832">
+													<Language>SFX</Language>
+													<AudioFile>pas_feuilles-007.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="pas_feuilles-007" ID="{8A8BE9A7-0651-48B9-B4A1-61A250B2B848}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="pas_feuilles-008" ID="{37342DC8-07BB-41A9-9CBF-2AD62C9486D3}" ShortID="114986533">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="pas_feuilles-008" ID="{E12DD223-F219-4079-8649-56E21FA54C0D}" ShortID="208500133">
+													<Language>SFX</Language>
+													<AudioFile>pas_feuilles-008.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="pas_feuilles-008" ID="{E12DD223-F219-4079-8649-56E21FA54C0D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="pas_feuilles-009" ID="{67273DF7-36B7-4E95-A688-5DF27CE6928B}" ShortID="299519014">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="pas_feuilles-009" ID="{EE074677-19B0-414C-AD86-B15F20A011B9}" ShortID="672718767">
+													<Language>SFX</Language>
+													<AudioFile>pas_feuilles-009.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="pas_feuilles-009" ID="{EE074677-19B0-414C-AD86-B15F20A011B9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="pas_feuilles-010" ID="{C33954EC-7322-462A-BCF7-23CD04634880}" ShortID="1020285277">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="pas_feuilles-010" ID="{61AC921D-77F0-4713-B075-535ADDC95C3B}" ShortID="500822886">
+													<Language>SFX</Language>
+													<AudioFile>pas_feuilles-010.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="pas_feuilles-010" ID="{61AC921D-77F0-4713-B075-535ADDC95C3B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
+						<Sound Name="jump" ID="{5FD515AD-335D-4638-A9FE-FBAB8D6510C0}" ShortID="385630764">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{CB79B6CF-92BA-4552-9108-D8049D44694C}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="SoundSeed Woosh" ID="{4E690250-D9E3-4A8D-A67D-EFE6640B4EB9}" ShortID="186195824" PluginName="SoundSeed Air/SoundSeed Woosh" CompanyID="0" PluginID="120">
+									<PropertyList>
+										<Property Name="FrequencyScale" Type="Real32" Value="2.74"/>
+										<Property Name="QFactorScale" Type="Real32" Value="-0.63"/>
+										<Property Name="Speed" Type="Real32" Value="-50"/>
+										<Property Name="SpeedAutomate" Type="bool" Value="True"/>
+										<Property Name="SpeedPointSpeedRandom" Type="Real32" Value="0"/>
+										<Property Name="SpeedPointTimeRandom" Type="Real32" Value="0.47"/>
+									</PropertyList>
 									<Language>SFX</Language>
-									<AudioFile>Sheep_Cartoon_Baa_4.wav</AudioFile>
-								</AudioFileSource>
+									<PluginData>
+	<WooshData>
+		<CurveList Version="1">
+			<CurveInfo Name="Speed">
+				<Curve Name="" ID="{2102A884-BDD7-420E-AEC8-C923FD417717}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>0.14254</XPos>
+							<YPos>100</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>0.28281</XPos>
+							<YPos>0</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>0.5</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+		<Path Version="1">
+			<Path2D Name="" ID="{64995A6B-163C-4ADE-9283-1782AE5B0290}">
+				<PropertyList>
+					<Property Name="LinearTime" Type="bool" Value="False"/>
+				</PropertyList>
+				<PointList>
+					<Point>
+						<XPos>0</XPos>
+						<YPos>0</YPos>
+						<Flags>12</Flags>
+						<Time>0</Time>
+					</Point>
+				</PointList>
+			</Path2D>
+		</Path>
+	</WooshData>
+</PluginData>
+									<PluginInnerObjectList>
+										<List Name="Deflectors">
+											<PluginInnerObject Name="" ID="{670EBC74-401D-43AB-8FD4-71C9F7636D91}" PluginName="Deflector" CompanyID="0" PluginID="122"/>
+										</List>
+									</PluginInnerObjectList>
+								</SourcePlugin>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Sheep_Cartoon_Baa_4" ID="{191D3834-3169-413C-93B0-8734F14D87C0}" Platform="Linked"/>
+								<ActiveSource Name="SoundSeed Woosh" ID="{4E690250-D9E3-4A8D-A67D-EFE6640B4EB9}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -100,34 +685,6 @@
 						<Sound Name="vent" ID="{1D131021-CC77-411C-99A7-CE43028845B7}" ShortID="960726966">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Pitch" Type="int32">
-									<RTPCList>
-										<RTPC Name="" ID="{B4A17EF2-B595-49B3-94C1-FA91DEF48940}" ShortID="118198262">
-											<ReferenceList>
-												<Reference Name="ControlInput">
-													<ObjectRef Name="pitch" ID="{FA33360D-5DF9-4CF5-AD73-9D6F548B971A}" WorkUnitID="{F71DCA4E-3ACF-4E02-8C33-8F6E9BD58B45}"/>
-												</Reference>
-											</ReferenceList>
-											<Curve Name="" ID="{FB7D0FEF-925F-4ED6-AD77-8C57D03990B3}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="65537"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>-2500</YPos>
-														<Flags>5</Flags>
-													</Point>
-													<Point>
-														<XPos>100</XPos>
-														<YPos>2500</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</RTPC>
-									</RTPCList>
-								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -147,6 +704,363 @@
 								<ActiveSource Name="loop vent" ID="{79851FBB-35C9-478A-858C-A509EA6D9624}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Amiance" ID="{877208DF-AF47-4794-A689-6EA02F85F42B}" ShortID="1004565642">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="ambiance" ID="{9725918B-FB55-4F76-B50B-6B2A6AED7793}" ShortID="594443540">
+							<PropertyList>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="cuicui" ID="{18918C32-61C7-433C-8712-DA622B789089}" ShortID="199981447">
+									<PropertyList>
+										<Property Name="3DPositionSource" Type="int16" Value="0"/>
+										<Property Name="FollowListenerOrientation" Type="bool" Value="False"/>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{770683FB-E37C-444C-90A1-47512AE13E82}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="2"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+											<RTPCList>
+												<RTPC Name="" ID="{208BE778-1FB6-4BDB-9B61-896ABB57955E}" ShortID="588851270">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="bird_time" ID="{E28196F2-2CE0-441D-9A81-4D612513D26E}" WorkUnitID="{F71DCA4E-3ACF-4E02-8C33-8F6E9BD58B45}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{D1350B52-2D3D-45F3-88C1-D77D58B530A4}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-4</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>6</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="5"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{FF9CDAE1-50F7-4C99-A77A-606548EBEA1D}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-22"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="cuicui-001" ID="{39B1FF89-2C8F-4522-9C3B-7FC2FD441BF5}" ShortID="235792989">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="cuicui-001" ID="{6835459D-1E51-49A3-B278-340CD7F27D73}" ShortID="198700583">
+													<Language>SFX</Language>
+													<AudioFile>cuicui-001.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="cuicui-001" ID="{6835459D-1E51-49A3-B278-340CD7F27D73}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="cuicui-002" ID="{61430261-B2F3-494F-A207-D87E04BCC0A7}" ShortID="421187431">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="cuicui-002" ID="{43AF95AF-1834-4363-81EC-CD58426B8CA0}" ShortID="804761111">
+													<Language>SFX</Language>
+													<AudioFile>cuicui-002.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="cuicui-002" ID="{43AF95AF-1834-4363-81EC-CD58426B8CA0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="cuicui-003" ID="{A1B885DE-2C0F-4987-93B6-99F446BC72C5}" ShortID="674729223">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="cuicui-003" ID="{957EF9A7-BE11-4A45-A17A-B8A6B8251F72}" ShortID="405364222">
+													<Language>SFX</Language>
+													<AudioFile>cuicui-003.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="cuicui-003" ID="{957EF9A7-BE11-4A45-A17A-B8A6B8251F72}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="cuicui-004" ID="{5C3EB70B-A3CF-4A3D-85E8-3624A5F6BBD8}" ShortID="871065877">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="cuicui-004" ID="{E00760DB-7548-4D12-A714-8368D2765ABE}" ShortID="447919821">
+													<Language>SFX</Language>
+													<AudioFile>cuicui-004.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="cuicui-004" ID="{E00760DB-7548-4D12-A714-8368D2765ABE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="cuicui-005" ID="{7B0FC77C-625C-4406-B72C-304CB33121D9}" ShortID="201065620">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="cuicui-005" ID="{2312998F-2DEF-43EF-A430-4000F7167A7A}" ShortID="276720773">
+													<Language>SFX</Language>
+													<AudioFile>cuicui-005.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="cuicui-005" ID="{2312998F-2DEF-43EF-A430-4000F7167A7A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="cuicui-006" ID="{EA18A9CA-7D47-48E9-8FD8-E5F9A0AF61C4}" ShortID="137285943">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="cuicui-006" ID="{91096653-3FA7-476A-9E7C-89F86756FAEB}" ShortID="955035148">
+													<Language>SFX</Language>
+													<AudioFile>cuicui-006.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="cuicui-006" ID="{91096653-3FA7-476A-9E7C-89F86756FAEB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="cuicui-007" ID="{F6A207EB-4E20-4AC5-A220-C71F0C62BEDF}" ShortID="588743563">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="cuicui-007" ID="{BBBD3E88-760D-45FA-B48F-DD80E8FBF600}" ShortID="817443228">
+													<Language>SFX</Language>
+													<AudioFile>cuicui-007.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="cuicui-007" ID="{BBBD3E88-760D-45FA-B48F-DD80E8FBF600}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="cuicui-008" ID="{04803576-6110-4E8F-A6DD-FF6ADA864CD0}" ShortID="186922358">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="cuicui-008" ID="{D14A8169-0CA7-4101-9914-78E6451787D7}" ShortID="138894188">
+													<Language>SFX</Language>
+													<AudioFile>cuicui-008.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="cuicui-008" ID="{D14A8169-0CA7-4101-9914-78E6451787D7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="cuicui-009" ID="{F6E84A0D-90F0-451B-8108-21CB4754C186}" ShortID="278478933">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="cuicui-009" ID="{9E6E48D3-9256-4B27-ACF3-37EFD790733A}" ShortID="758672749">
+													<Language>SFX</Language>
+													<AudioFile>cuicui-009.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="cuicui-009" ID="{9E6E48D3-9256-4B27-ACF3-37EFD790733A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="cuicui-010" ID="{4832C237-CF9E-4353-BD12-F80E81D9D4A5}" ShortID="581297922">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="cuicui-010" ID="{53965BD6-F750-4575-8206-B5EF32548B85}" ShortID="783118329">
+													<Language>SFX</Language>
+													<AudioFile>cuicui-010.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="cuicui-010" ID="{53965BD6-F750-4575-8206-B5EF32548B85}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="cuicui-011" ID="{A7CC425B-FBE2-4915-B059-19B9E378557B}" ShortID="1052972470">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="cuicui-011" ID="{3A753BE1-7CF2-4944-BE1C-12F6399CE483}" ShortID="201447239">
+													<Language>SFX</Language>
+													<AudioFile>cuicui-011.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="cuicui-011" ID="{3A753BE1-7CF2-4944-BE1C-12F6399CE483}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{9E2EB46A-FA1E-4254-8BB5-D45F8572E47F}">
+											<PropertyList>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="cuicui_Path" ID="{8E38384F-9F88-4B8B-9B07-413A7FDE3159}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="100"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+								</RandomSequenceContainer>
+								<Sound Name="amb_loop_1" ID="{614D7B24-453C-4933-BBF5-AAB2DF39CCCE}" ShortID="78399320">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_loop_1" ID="{6069C91B-6D7A-4A1C-BCCC-29DA6DFEB040}" ShortID="160158282">
+											<Language>SFX</Language>
+											<AudioFile>amb_loop_1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_loop_1" ID="{6069C91B-6D7A-4A1C-BCCC-29DA6DFEB040}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
