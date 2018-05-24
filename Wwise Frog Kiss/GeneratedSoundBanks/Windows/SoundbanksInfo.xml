@@ -1,25 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="128">
 	<RootPaths>
-		<ProjectRoot>D:\GIT\FrogKissWwise\Wwise Frog Kiss\</ProjectRoot>
-		<SourceFilesRoot>D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>D:\GIT\FrogKissWwise\Wwise Frog Kiss\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Hed\Desktop\FrogKiss-wwise-musictransition-done6eb30525c8507a5f3bb22f18439f6c76c6cfed90\FrogKiss-6eb30525c8507a5f3bb22f18439f6c76c6cfed90\FrogKissWwise\Wwise Frog Kiss\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Hed\Desktop\FrogKiss-wwise-musictransition-done6eb30525c8507a5f3bb22f18439f6c76c6cfed90\FrogKiss-6eb30525c8507a5f3bb22f18439f6c76c6cfed90\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Hed\Desktop\FrogKiss-wwise-musictransition-done6eb30525c8507a5f3bb22f18439f6c76c6cfed90\FrogKiss-6eb30525c8507a5f3bb22f18439f6c76c6cfed90\FrogKissWwise\Wwise Frog Kiss\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\GIT\FrogKissWwise\Wwise Frog Kiss\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Hed\Desktop\FrogKiss-wwise-musictransition-done6eb30525c8507a5f3bb22f18439f6c76c6cfed90\FrogKiss-6eb30525c8507a5f3bb22f18439f6c76c6cfed90\FrogKissWwise\Wwise Frog Kiss\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX">
-			<ObjectPath>Init</ObjectPath>
-			<ShortName>Init</ShortName>
-			<Path>Init.bnk</Path>
-		</SoundBank>
-		<SoundBank Id="4072029455" Language="SFX">
-			<ObjectPath>\SoundBanks\Default Work Unit\New_SoundBank</ObjectPath>
-			<ShortName>New_SoundBank</ShortName>
-			<Path>New_SoundBank.bnk</Path>
+		<SoundBank Id="919382353" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\New_Name</ObjectPath>
+			<ShortName>New_Name</ShortName>
+			<Path>New_Name.bnk</Path>
 			<IncludedEvents>
 				<Event Id="3174479978" Name="Play_ambiance" ObjectPath="\Events\Default Work Unit\Play_ambiance"/>
 				<Event Id="64860570" Name="Play_BackHome" ObjectPath="\Events\Default Work Unit\Play_BackHome"/>
@@ -171,6 +166,11 @@
 					<Path>SFX\cuicui-006_1C9C67B2.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

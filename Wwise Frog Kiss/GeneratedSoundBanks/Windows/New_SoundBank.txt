@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+<<<<<<< HEAD
 	64860570	Play_BackHome			\Default Work Unit\Play_BackHome	
 	452547817	Stop_all			\Default Work Unit\Stop_all	
 	2822502042	Play_pas			\Default Work Unit\Play_pas	
@@ -6,6 +7,14 @@ Event	ID	Name			Wwise Object Path	Notes
 	3174479978	Play_ambiance			\Default Work Unit\Play_ambiance	
 	3411707765	Play_sfx2D			\Default Work Unit\Play_sfx2D	
 	3922864755	Play_Danse			\Default Work Unit\Play_Danse	
+=======
+	1350749805	Stop_vent			\Default Work Unit\Stop_vent	
+	1640874226	Stop_LOOP			\Default Work Unit\Stop_LOOP	
+	3394929946	Play_sfx3D			\Default Work Unit\Play_sfx3D	
+	3411707765	Play_sfx2D			\Default Work Unit\Play_sfx2D	
+	4058155063	Play_vent			\Default Work Unit\Play_vent	
+	4266239556	Play_LOOP			\Default Work Unit\Play_LOOP	
+>>>>>>> 4a0b2c3b0e92bf8fff3a3940a2495a64b003500b
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1164516053	pas_dur_vol			\Default Work Unit\pas_dur_vol	
@@ -13,6 +22,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	2837938024	bird_time			\Default Work Unit\bird_time	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+<<<<<<< HEAD
 	32673462	pas_dur-005	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\pas_dur-005_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\sfx 3D\pas\pas_dur\pas_dur-005		31716
 	37021032	pas_feuilles-006	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\pas_feuilles-006_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\sfx 3D\pas\pas_feuilles\pas_feuilles-006		35188
 	85305738	pas_dur-007	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\pas_dur-007_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\sfx 3D\pas\pas_dur\pas_dur-007		33312
@@ -48,4 +58,12 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	881775451	pas_dur-002	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\pas_dur-002_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\sfx 3D\pas\pas_dur\pas_dur-002		28980
 	950020302	pas_feuilles-005	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\pas_feuilles-005_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\sfx 3D\pas\pas_feuilles\pas_feuilles-005		25940
 	955035148	cuicui-006	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\cuicui-006_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\Amiance\ambiance\cuicui\cuicui-006		609076
+=======
+	28040161	loop 1	D:\Cloud\WORK\JMIN\GIT\FrogKiss\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\loop 1_F17FB28C.wem		\Interactive Music Hierarchy\Music placeholder\LOOP\loop 1\loop 1\loop 1		2712724
+	312959866	Sheep_Cartoon_Baa_4	D:\Cloud\WORK\JMIN\GIT\FrogKiss\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\Sheep_Cartoon_Baa_4_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\sfx 3D\Sheep_Cartoon_Baa_4		171072
+	406653414	vent	D:\Cloud\WORK\JMIN\GIT\FrogKiss\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\loop vent_F17FB28C.wem		\Actor-Mixer Hierarchy\Frog Kiss\vent\vent		7455832
+	741145507	menu_validation	D:\Cloud\WORK\JMIN\GIT\FrogKiss\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\menu_validation_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\sfx 2D\menu_validation		159724
+	748229991	loop 2	D:\Cloud\WORK\JMIN\GIT\FrogKiss\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\loop 2_F17FB28C.wem		\Interactive Music Hierarchy\Music placeholder\LOOP\loop2\loop 2\loop 2		1354696
+	914008164	bridge	D:\Cloud\WORK\JMIN\GIT\FrogKiss\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\bridge_F17FB28C.wem		\Interactive Music Hierarchy\Music placeholder\LOOP\loop2\bridge\bridge		675796
+>>>>>>> 4a0b2c3b0e92bf8fff3a3940a2495a64b003500b
 
