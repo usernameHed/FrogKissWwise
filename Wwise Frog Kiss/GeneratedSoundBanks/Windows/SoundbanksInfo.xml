@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="128">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Hed\Desktop\FrogKiss-wwise-musictransition-done6eb30525c8507a5f3bb22f18439f6c76c6cfed90\FrogKiss-6eb30525c8507a5f3bb22f18439f6c76c6cfed90\FrogKissWwise\Wwise Frog Kiss\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Hed\Desktop\FrogKiss-wwise-musictransition-done6eb30525c8507a5f3bb22f18439f6c76c6cfed90\FrogKiss-6eb30525c8507a5f3bb22f18439f6c76c6cfed90\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Hed\Desktop\FrogKiss-wwise-musictransition-done6eb30525c8507a5f3bb22f18439f6c76c6cfed90\FrogKiss-6eb30525c8507a5f3bb22f18439f6c76c6cfed90\FrogKissWwise\Wwise Frog Kiss\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>D:\GIT\FrogKissWwise\Wwise Frog Kiss\</ProjectRoot>
+		<SourceFilesRoot>D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\GIT\FrogKissWwise\Wwise Frog Kiss\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Hed\Desktop\FrogKiss-wwise-musictransition-done6eb30525c8507a5f3bb22f18439f6c76c6cfed90\FrogKiss-6eb30525c8507a5f3bb22f18439f6c76c6cfed90\FrogKissWwise\Wwise Frog Kiss\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\GIT\FrogKissWwise\Wwise Frog Kiss\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -19,10 +19,14 @@
 				<Event Id="3174479978" Name="Play_ambiance" ObjectPath="\Events\Default Work Unit\Play_ambiance"/>
 				<Event Id="64860570" Name="Play_BackHome" ObjectPath="\Events\Default Work Unit\Play_BackHome"/>
 				<Event Id="3922864755" Name="Play_Danse" ObjectPath="\Events\Default Work Unit\Play_Danse"/>
+				<Event Id="3689126666" Name="Play_Jump" ObjectPath="\Events\Default Work Unit\Play_Jump"/>
 				<Event Id="2822502042" Name="Play_pas" ObjectPath="\Events\Default Work Unit\Play_pas"/>
 				<Event Id="3411707765" Name="Play_sfx2D" ObjectPath="\Events\Default Work Unit\Play_sfx2D"/>
 				<Event Id="452547817" Name="Stop_all" ObjectPath="\Events\Default Work Unit\Stop_all"/>
 				<Event Id="2839405212" Name="Stop_ambiance" ObjectPath="\Events\Default Work Unit\Stop_ambiance"/>
+				<Event Id="4259515904" Name="Stop_BackHome" ObjectPath="\Events\Default Work Unit\Stop_BackHome"/>
+				<Event Id="3250561749" Name="Stop_Danse" ObjectPath="\Events\Default Work Unit\Stop_Danse"/>
+				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\Default Work Unit\Stop_Music"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="32673462" Language="SFX">

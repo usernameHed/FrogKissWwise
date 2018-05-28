@@ -119,6 +119,72 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Stop_BackHome" ID="{C3EC8879-92AB-454E-9220-9282D107DF61}">
+					<ChildrenList>
+						<Action Name="" ID="{F1C712E5-F651-4866-A4A2-F75ED461EDF2}" ShortID="740152101">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BackHome" ID="{13FBC876-890F-47E6-99EF-09C981096102}" WorkUnitID="{24441BEA-7D03-40CF-9A6C-232D396C0874}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Danse" ID="{DE49BD85-D65D-4D16-AE01-A5F16F92E5AD}">
+					<ChildrenList>
+						<Action Name="" ID="{0D2A685E-980E-44E7-ACF9-E0866FFBBF9F}" ShortID="949135490">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Danse" ID="{D503C71C-264A-4FC0-9542-5A7E793E7269}" WorkUnitID="{24441BEA-7D03-40CF-9A6C-232D396C0874}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Jump" ID="{F7A5ACFF-2052-4A12-8618-72891FB4CBBC}">
+					<ChildrenList>
+						<Action Name="" ID="{9B6F7195-21E8-486C-A143-344C20D4007D}" ShortID="911739321">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="jump" ID="{68B4DEEE-7508-43FA-9570-FC8B389FE4A5}" WorkUnitID="{FDF87CCA-B268-48D5-965B-F36042191A27}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Music" ID="{2F2D3347-7CD8-45D5-BC6B-C58D41BF269F}">
+					<ChildrenList>
+						<Action Name="" ID="{70D64AC7-3AFC-436D-82A5-69F05DB2B7A6}" ShortID="262415517">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BackHome" ID="{13FBC876-890F-47E6-99EF-09C981096102}" WorkUnitID="{24441BEA-7D03-40CF-9A6C-232D396C0874}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{B1137564-9B0D-455F-B9E5-E1DDB3A26AC9}" ShortID="389339020">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Danse" ID="{D503C71C-264A-4FC0-9542-5A7E793E7269}" WorkUnitID="{24441BEA-7D03-40CF-9A6C-232D396C0874}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

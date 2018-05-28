@@ -16,8 +16,325 @@
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
 						</Reference>
 					</ReferenceList>
+					<PositioningInfo>
+						<Position Name="" ID="{F1C7714B-DE67-4EFA-B098-19E2CC590237}"/>
+					</PositioningInfo>
+				</ActorMixer>
+				<ActorMixer Name="sfx 2D" ID="{BDBCC1A3-9871-42FA-91FD-7019E2E6625C}" ShortID="501271098">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>12</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+						</Reference>
+					</ReferenceList>
 					<ChildrenList>
+						<Sound Name="menu_validation" ID="{A94B757E-F46C-4112-99CA-6D9933FA34F5}" ShortID="641237355">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="menu_validation" ID="{C5AF065F-5D8F-4C93-A3CC-9A9E9496F5EA}" ShortID="741145507">
+									<Language>SFX</Language>
+									<AudioFile>menu_validation.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="menu_validation" ID="{C5AF065F-5D8F-4C93-A3CC-9A9E9496F5EA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<BlendContainer Name="jump" ID="{68B4DEEE-7508-43FA-9570-FC8B389FE4A5}" ShortID="60122410">
+							<PropertyList>
+								<Property Name="EnablePositioning" Type="bool" Value="False"/>
+								<Property Name="Spatialization" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="jump" ID="{5FD515AD-335D-4638-A9FE-FBAB8D6510C0}" ShortID="385630764">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{CB79B6CF-92BA-4552-9108-D8049D44694C}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="Spatialization" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>12</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="SoundSeed Woosh" ID="{4E690250-D9E3-4A8D-A67D-EFE6640B4EB9}" ShortID="186195824" PluginName="SoundSeed Air/SoundSeed Woosh" CompanyID="0" PluginID="120">
+											<PropertyList>
+												<Property Name="Duration" Type="Real64" Value="0.3"/>
+												<Property Name="FrequencyScale" Type="Real32" Value="2.74"/>
+												<Property Name="GainOffsetAutomate" Type="bool" Value="True"/>
+												<Property Name="QFactorScale" Type="Real32" Value="-0.63"/>
+												<Property Name="Speed" Type="Real32" Value="-50"/>
+												<Property Name="SpeedAutomate" Type="bool" Value="True"/>
+												<Property Name="SpeedPointSpeedRandom" Type="Real32" Value="0"/>
+												<Property Name="SpeedPointTimeRandom" Type="Real32" Value="0.51"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<PluginData>
+	<WooshData>
+		<CurveList Version="1">
+			<CurveInfo Name="FrequencyScale">
+				<Curve Name="" ID="{8D6C58BC-BE86-438A-95AF-CD584B957B80}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>0.3</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="GainOffset">
+				<Curve Name="" ID="{5375CBA6-E7AF-4458-9EE2-ACA0EBEEC056}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>0.10745</XPos>
+							<YPos>0.38682</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>0.14018</XPos>
+							<YPos>-96.3</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>0.3</XPos>
+							<YPos>-96.3</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="Speed">
+				<Curve Name="" ID="{2102A884-BDD7-420E-AEC8-C923FD417717}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>0.085524</XPos>
+							<YPos>100</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>0.17161</XPos>
+							<YPos>0</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>0.3</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+		<Path Version="1">
+			<Path2D Name="" ID="{64995A6B-163C-4ADE-9283-1782AE5B0290}">
+				<PropertyList>
+					<Property Name="LinearTime" Type="bool" Value="False"/>
+				</PropertyList>
+				<PointList>
+					<Point>
+						<XPos>0</XPos>
+						<YPos>0</YPos>
+						<Flags>12</Flags>
+						<Time>0</Time>
+					</Point>
+				</PointList>
+			</Path2D>
+		</Path>
+	</WooshData>
+</PluginData>
+											<PluginInnerObjectList>
+												<List Name="Deflectors">
+													<PluginInnerObject Name="" ID="{670EBC74-401D-43AB-8FD4-71C9F7636D91}" PluginName="Deflector" CompanyID="0" PluginID="122"/>
+												</List>
+											</PluginInnerObjectList>
+										</SourcePlugin>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{E2D2A060-B4E6-4B5E-86F9-D020F7FEAC8F}"/>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="SoundSeed Woosh" ID="{4E690250-D9E3-4A8D-A67D-EFE6640B4EB9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="pas_feuilles-006" ID="{6DAF6D68-E801-4707-AB37-AB65562C9B9A}" ShortID="605508451">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>0.05</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="pas_feuilles-006" ID="{E73A3324-9E93-48F4-B087-96CB48B3CE4A}" ShortID="846051507">
+											<Language>SFX</Language>
+											<AudioFile>pas_feuilles-006.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="37021032"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="pas_feuilles-006" ID="{E73A3324-9E93-48F4-B087-96CB48B3CE4A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="pas_dur-005" ID="{033EA0CF-7906-4404-A35A-8F2DCDAA4311}" ShortID="654487939">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>0.02</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="Spatialization" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="pas_dur-005" ID="{CE32DC13-F8EA-48E9-81B6-E6596B5D9370}" ShortID="32673462">
+											<Language>SFX</Language>
+											<AudioFile>pas_dur-005.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{2778DDBF-19F6-4B2D-A581-489E9E90E3FD}"/>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="pas_dur-005" ID="{CE32DC13-F8EA-48E9-81B6-E6596B5D9370}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="pas_dur-001" ID="{7D0F1EC7-882E-4B2E-AA9C-EF06D5C0BEF6}" ShortID="1021731662">
+									<PropertyList>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="Spatialization" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="pas_dur-001" ID="{C375F893-9756-4F19-A3BD-A44FD862E9D2}" ShortID="481280554">
+											<Language>SFX</Language>
+											<AudioFile>pas_dur-001.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{749D79AB-C9E9-4463-9151-3D9A32594969}"/>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="pas_dur-001" ID="{C375F893-9756-4F19-A3BD-A44FD862E9D2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{859D1623-4200-4760-AE87-13A18519A303}"/>
+							</PositioningInfo>
+						</BlendContainer>
 						<BlendContainer Name="pas" ID="{12F54DCB-5D19-41E5-A2C5-33FB10D52137}" ShortID="212561402">
+							<PropertyList>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Spatialization" Type="int16" Value="1"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
@@ -81,25 +398,6 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="pas_dur-001" ID="{7D0F1EC7-882E-4B2E-AA9C-EF06D5C0BEF6}" ShortID="1021731662">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="pas_dur-001" ID="{C375F893-9756-4F19-A3BD-A44FD862E9D2}" ShortID="481280554">
-													<Language>SFX</Language>
-													<AudioFile>pas_dur-001.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="pas_dur-001" ID="{C375F893-9756-4F19-A3BD-A44FD862E9D2}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
 										<Sound Name="pas_dur-002" ID="{1894BC98-391C-44E6-AB19-637736F53804}" ShortID="499317723">
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -155,25 +453,6 @@
 											</ChildrenList>
 											<ActiveSourceList>
 												<ActiveSource Name="pas_dur-004" ID="{05805287-144D-4270-B11A-A221B0428968}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="pas_dur-005" ID="{033EA0CF-7906-4404-A35A-8F2DCDAA4311}" ShortID="654487939">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="pas_dur-005" ID="{CE32DC13-F8EA-48E9-81B6-E6596B5D9370}" ShortID="32673462">
-													<Language>SFX</Language>
-													<AudioFile>pas_dur-005.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="pas_dur-005" ID="{CE32DC13-F8EA-48E9-81B6-E6596B5D9370}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="pas_dur-006" ID="{A9016A9C-4B70-475B-A9E5-BECA26FFB813}" ShortID="339699089">
@@ -520,147 +799,10 @@
 									</ChildrenList>
 								</RandomSequenceContainer>
 							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{6E5D879C-D2C7-4924-8FAE-485BDA7AAD22}"/>
+							</PositioningInfo>
 						</BlendContainer>
-						<Sound Name="jump" ID="{5FD515AD-335D-4638-A9FE-FBAB8D6510C0}" ShortID="385630764">
-							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ValueList>
-										<Value>100</Value>
-									</ValueList>
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{CB79B6CF-92BA-4552-9108-D8049D44694C}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="100"/>
-													<Property Name="Min" Type="Real64" Value="-100"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<SourcePlugin Name="SoundSeed Woosh" ID="{4E690250-D9E3-4A8D-A67D-EFE6640B4EB9}" ShortID="186195824" PluginName="SoundSeed Air/SoundSeed Woosh" CompanyID="0" PluginID="120">
-									<PropertyList>
-										<Property Name="FrequencyScale" Type="Real32" Value="2.74"/>
-										<Property Name="QFactorScale" Type="Real32" Value="-0.63"/>
-										<Property Name="Speed" Type="Real32" Value="-50"/>
-										<Property Name="SpeedAutomate" Type="bool" Value="True"/>
-										<Property Name="SpeedPointSpeedRandom" Type="Real32" Value="0"/>
-										<Property Name="SpeedPointTimeRandom" Type="Real32" Value="0.47"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<PluginData>
-	<WooshData>
-		<CurveList Version="1">
-			<CurveInfo Name="Speed">
-				<Curve Name="" ID="{2102A884-BDD7-420E-AEC8-C923FD417717}">
-					<PropertyList>
-						<Property Name="Flags" Type="int32" Value="1"/>
-					</PropertyList>
-					<PointList>
-						<Point>
-							<XPos>0</XPos>
-							<YPos>0</YPos>
-							<Flags>5</Flags>
-						</Point>
-						<Point>
-							<XPos>0.14254</XPos>
-							<YPos>100</YPos>
-							<Flags>0</Flags>
-						</Point>
-						<Point>
-							<XPos>0.28281</XPos>
-							<YPos>0</YPos>
-							<Flags>0</Flags>
-						</Point>
-						<Point>
-							<XPos>0.5</XPos>
-							<YPos>0</YPos>
-							<Flags>37</Flags>
-						</Point>
-					</PointList>
-				</Curve>
-			</CurveInfo>
-		</CurveList>
-		<Path Version="1">
-			<Path2D Name="" ID="{64995A6B-163C-4ADE-9283-1782AE5B0290}">
-				<PropertyList>
-					<Property Name="LinearTime" Type="bool" Value="False"/>
-				</PropertyList>
-				<PointList>
-					<Point>
-						<XPos>0</XPos>
-						<YPos>0</YPos>
-						<Flags>12</Flags>
-						<Time>0</Time>
-					</Point>
-				</PointList>
-			</Path2D>
-		</Path>
-	</WooshData>
-</PluginData>
-									<PluginInnerObjectList>
-										<List Name="Deflectors">
-											<PluginInnerObject Name="" ID="{670EBC74-401D-43AB-8FD4-71C9F7636D91}" PluginName="Deflector" CompanyID="0" PluginID="122"/>
-										</List>
-									</PluginInnerObjectList>
-								</SourcePlugin>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="SoundSeed Woosh" ID="{4E690250-D9E3-4A8D-A67D-EFE6640B4EB9}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
-					<PositioningInfo>
-						<Position Name="" ID="{F1C7714B-DE67-4EFA-B098-19E2CC590237}"/>
-					</PositioningInfo>
-				</ActorMixer>
-				<ActorMixer Name="sfx 2D" ID="{BDBCC1A3-9871-42FA-91FD-7019E2E6625C}" ShortID="501271098">
-					<PropertyList>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>12</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<Sound Name="menu_validation" ID="{A94B757E-F46C-4112-99CA-6D9933FA34F5}" ShortID="641237355">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="menu_validation" ID="{C5AF065F-5D8F-4C93-A3CC-9A9E9496F5EA}" ShortID="741145507">
-									<Language>SFX</Language>
-									<AudioFile>menu_validation.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="menu_validation" ID="{C5AF065F-5D8F-4C93-A3CC-9A9E9496F5EA}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 					</ChildrenList>
 					<PositioningInfo>
 						<Panner Name="" ID="{6236FDEC-750A-4252-85C4-D793588C9B56}">
@@ -763,12 +905,12 @@
 														<PointList>
 															<Point>
 																<XPos>0</XPos>
-																<YPos>-4</YPos>
+																<YPos>6</YPos>
 																<Flags>5</Flags>
 															</Point>
 															<Point>
 																<XPos>100</XPos>
-																<YPos>6</YPos>
+																<YPos>-4</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -781,7 +923,7 @@
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="5"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-3</Value>
+												<Value>-6</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
