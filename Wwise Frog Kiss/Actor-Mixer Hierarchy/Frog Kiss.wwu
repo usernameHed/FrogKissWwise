@@ -1258,6 +1258,55 @@
 						</BlendContainer>
 					</ChildrenList>
 				</ActorMixer>
+				<ActorMixer Name="Win" ID="{B9C93733-AAAD-4FD6-8A74-6D09A3B7125F}" ShortID="712416197">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="menumusique" ID="{CBDFCD76-6ECE-46BE-BD21-000C399888E6}" ShortID="718023533">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="placeholdermenu" ID="{8150CE7A-EB98-456B-8AD0-3E4240A0B0E8}" ShortID="832943532">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="placeholdermenu" ID="{6D4F173A-9568-4B26-AFB9-4709B56F77ED}" ShortID="163022003">
+											<Language>SFX</Language>
+											<AudioFile>placeholdermenu.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="944999725"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="placeholdermenu" ID="{6D4F173A-9568-4B26-AFB9-4709B56F77ED}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+					</ChildrenList>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

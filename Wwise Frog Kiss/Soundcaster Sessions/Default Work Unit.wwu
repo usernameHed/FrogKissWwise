@@ -85,7 +85,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="MusicLoop" ID="{17EFA313-0BD0-4B2A-851A-432BC76DFBA1}"/>
+						<CurrentStateRef Name="MusicNoLoop" ID="{DB2CAF2F-8E6D-48AC-82B4-C1D1DA41665E}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
