@@ -16,12 +16,14 @@
 			<ShortName>New_Name</ShortName>
 			<Path>New_Name.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3356756485" Name="Collectible" ObjectPath="\Events\Default Work Unit\Collectible"/>
+				<Event Id="4011733850" Name="MenuMusic_Play" ObjectPath="\Events\Default Work Unit\MenuMusic_Play"/>
+				<Event Id="1115745636" Name="MenuMusic_stop" ObjectPath="\Events\Default Work Unit\MenuMusic_stop"/>
 				<Event Id="3174479978" Name="Play_ambiance" ObjectPath="\Events\Default Work Unit\Play_ambiance"/>
 				<Event Id="64860570" Name="Play_BackHome" ObjectPath="\Events\Default Work Unit\Play_BackHome"/>
 				<Event Id="3922864755" Name="Play_Danse" ObjectPath="\Events\Default Work Unit\Play_Danse"/>
 				<Event Id="3689126666" Name="Play_Jump" ObjectPath="\Events\Default Work Unit\Play_Jump"/>
 				<Event Id="2822502042" Name="Play_pas" ObjectPath="\Events\Default Work Unit\Play_pas"/>
-				<Event Id="3411707765" Name="Play_sfx2D" ObjectPath="\Events\Default Work Unit\Play_sfx2D"/>
 				<Event Id="452547817" Name="Stop_all" ObjectPath="\Events\Default Work Unit\Stop_all"/>
 				<Event Id="2839405212" Name="Stop_ambiance" ObjectPath="\Events\Default Work Unit\Stop_ambiance"/>
 				<Event Id="4259515904" Name="Stop_BackHome" ObjectPath="\Events\Default Work Unit\Stop_BackHome"/>
@@ -160,6 +162,10 @@
 				<File Id="881775451" Language="SFX">
 					<ShortName>pas_dur-002.wav</ShortName>
 					<Path>SFX\pas_dur-002_1C9C67B2.wem</Path>
+				</File>
+				<File Id="944999725" Language="SFX">
+					<ShortName>placeholdermenu.wav</ShortName>
+					<Path>SFX\placeholdermenu_F17FB28C.wem</Path>
 				</File>
 				<File Id="950020302" Language="SFX">
 					<ShortName>pas_feuilles-005.wav</ShortName>

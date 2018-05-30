@@ -1,14 +1,16 @@
 Event	ID	Name			Wwise Object Path	Notes
 	64860570	Play_BackHome			\Default Work Unit\Play_BackHome	
 	452547817	Stop_all			\Default Work Unit\Stop_all	
+	1115745636	MenuMusic_stop			\Default Work Unit\MenuMusic_stop	
 	2822502042	Play_pas			\Default Work Unit\Play_pas	
 	2837384057	Stop_Music			\Default Work Unit\Stop_Music	
 	2839405212	Stop_ambiance			\Default Work Unit\Stop_ambiance	
 	3174479978	Play_ambiance			\Default Work Unit\Play_ambiance	
 	3250561749	Stop_Danse			\Default Work Unit\Stop_Danse	
-	3411707765	Play_sfx2D			\Default Work Unit\Play_sfx2D	
+	3356756485	Collectible			\Default Work Unit\Collectible	
 	3689126666	Play_Jump			\Default Work Unit\Play_Jump	
 	3922864755	Play_Danse			\Default Work Unit\Play_Danse	
+	4011733850	MenuMusic_Play			\Default Work Unit\MenuMusic_Play	
 	4259515904	Stop_BackHome			\Default Work Unit\Stop_BackHome	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
@@ -53,6 +55,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	804761111	cuicui-002	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\cuicui-002_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\Amiance\ambiance\cuicui\cuicui-002		754172
 	817443228	cuicui-007	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\cuicui-007_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\Amiance\ambiance\cuicui\cuicui-007		435256
 	881775451	pas_dur-002	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\pas_dur-002_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\sfx 2D\pas\pas_dur\pas_dur-002		28980
+	944999725	placeholdermenu	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\placeholdermenu_F17FB28C.wem		\Actor-Mixer Hierarchy\Frog Kiss\musique menu\menumusique\placeholdermenu		2845500
 	950020302	pas_feuilles-005	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\pas_feuilles-005_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\sfx 2D\pas\pas_feuilles\pas_feuilles-005		25940
 	955035148	cuicui-006	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\cuicui-006_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\Amiance\ambiance\cuicui\cuicui-006		609076
 

@@ -3,7 +3,7 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{9F383271-D774-4D0B-AB5E-304080A2F4DA}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_sfx2D" ID="{A6685703-1413-4ECB-B3FF-EDB44743296D}">
+				<Event Name="Collectible" ID="{A6685703-1413-4ECB-B3FF-EDB44743296D}">
 					<ChildrenList>
 						<Action Name="" ID="{5578BA13-09E1-47E9-8AB0-F53FBCBDEA6D}" ShortID="285379475">
 							<PropertyList>
@@ -180,6 +180,34 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Danse" ID="{D503C71C-264A-4FC0-9542-5A7E793E7269}" WorkUnitID="{24441BEA-7D03-40CF-9A6C-232D396C0874}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MenuMusic_Play" ID="{89BCA88E-C226-45EE-9E09-6EDFB2F58994}">
+					<ChildrenList>
+						<Action Name="" ID="{E6947A24-E5B5-4531-8799-F05AE1055172}" ShortID="965409164">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="menumusique" ID="{F9CB7A54-0F2A-473E-A5B0-1576524369BA}" WorkUnitID="{FDF87CCA-B268-48D5-965B-F36042191A27}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MenuMusic_stop" ID="{7E80B536-22B4-4FFE-82B2-0719690B02AB}">
+					<ChildrenList>
+						<Action Name="" ID="{426D42B3-0BFC-45CC-98B5-50F0EC4F0840}" ShortID="83467319">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="menumusique" ID="{F9CB7A54-0F2A-473E-A5B0-1576524369BA}" WorkUnitID="{FDF87CCA-B268-48D5-965B-F36042191A27}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
