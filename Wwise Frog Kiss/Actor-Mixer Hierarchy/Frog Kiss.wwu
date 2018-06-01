@@ -1347,21 +1347,20 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<RandomSequenceContainer Name="notes ré" ID="{1D6F7DCD-C181-4288-8377-20342BB2143B}" ShortID="645857911">
+								<RandomSequenceContainer Name="musicmenu" ID="{9FC93A8C-5868-4A55-97F4-1D2E2E44844F}" ShortID="454229690">
 									<PropertyList>
-										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
 										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
 											<RTPCList>
-												<RTPC Name="" ID="{E5F3F4E4-EB66-4036-8490-F933A24D133E}" ShortID="735006032">
+												<RTPC Name="" ID="{44FC2E15-5FA7-474C-9F61-403DCB48140A}" ShortID="779579237">
 													<ReferenceList>
 														<Reference Name="ControlInput">
 															<ObjectRef Name="New Modulator LFO" ID="{78096E42-CD1F-4D2F-B0BD-05B69A6EFC04}" WorkUnitID="{4BA36926-47DB-4799-A3B9-85D0D7576DC1}"/>
 														</Reference>
 													</ReferenceList>
-													<Curve Name="" ID="{F1B1827F-7407-44C3-8B37-BFB472AFCE15}">
+													<Curve Name="" ID="{46D4AF1E-77AB-43C3-A4D0-9A77C1BEF0E1}">
 														<PropertyList>
 															<Property Name="Flags" Type="int32" Value="1"/>
 														</PropertyList>
@@ -1382,391 +1381,423 @@
 											</RTPCList>
 										</Property>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
-										</Reference>
-										<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
-											<ObjectRef Name="pizz" ID="{7BB8FF51-545C-4A65-8DAE-4F8856B978B6}" WorkUnitID="{ACE1B6E7-43F6-4A29-982A-55CA397C8F02}"/>
-										</Reference>
-										<Reference Name="Effect1" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
-											<ObjectRef Name="pizzdel" ID="{3C5D2658-A82C-44E0-9BED-09C624105554}" WorkUnitID="{ACE1B6E7-43F6-4A29-982A-55CA397C8F02}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="note-002" ID="{C8F7A5BA-8E29-4172-880E-06D6A16F232C}" ShortID="291805208">
+										<RandomSequenceContainer Name="notes ré" ID="{1D6F7DCD-C181-4288-8377-20342BB2143B}" ShortID="645857911">
 											<PropertyList>
-												<Property Name="Weight" Type="Real64">
-													<ValueList>
-														<Value>20</Value>
-													</ValueList>
-												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+													<ObjectRef Name="pizz" ID="{7BB8FF51-545C-4A65-8DAE-4F8856B978B6}" WorkUnitID="{ACE1B6E7-43F6-4A29-982A-55CA397C8F02}"/>
+												</Reference>
+												<Reference Name="Effect1" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+													<ObjectRef Name="pizzdel" ID="{3C5D2658-A82C-44E0-9BED-09C624105554}" WorkUnitID="{ACE1B6E7-43F6-4A29-982A-55CA397C8F02}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="note-002" ID="{D84C4DD3-155F-4AEC-BC66-C81EA5C719B0}" ShortID="543215213">
-													<Language>SFX</Language>
-													<AudioFile>note-002.wav</AudioFile>
-												</AudioFileSource>
+												<Sound Name="note-002" ID="{C8F7A5BA-8E29-4172-880E-06D6A16F232C}" ShortID="291805208">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="note-002" ID="{D84C4DD3-155F-4AEC-BC66-C81EA5C719B0}" ShortID="543215213">
+															<Language>SFX</Language>
+															<AudioFile>note-002.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="note-002" ID="{D84C4DD3-155F-4AEC-BC66-C81EA5C719B0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="note-004" ID="{F62200B8-DA42-4546-872A-DC1B5EF07EB3}" ShortID="448908093">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="note-004" ID="{FACFEC5F-1AED-4977-857E-FD935215CE15}" ShortID="972524167">
+															<Language>SFX</Language>
+															<AudioFile>note-004.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="note-004" ID="{FACFEC5F-1AED-4977-857E-FD935215CE15}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="note-006" ID="{7A85DE52-349F-4DC2-A176-0A22E01F83BD}" ShortID="259155492">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="note-006" ID="{A47928DB-86A8-45B0-9988-368124FDCF1F}" ShortID="228508597">
+															<Language>SFX</Language>
+															<AudioFile>note-006.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="note-006" ID="{A47928DB-86A8-45B0-9988-368124FDCF1F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="note-009" ID="{72920F73-8F37-40D3-9FE9-F489CDF57BF5}" ShortID="236266248">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="note-009" ID="{B5D89A8E-514D-496F-81BD-BE21DF56AB20}" ShortID="94374783">
+															<Language>SFX</Language>
+															<AudioFile>note-009.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="note-009" ID="{B5D89A8E-514D-496F-81BD-BE21DF56AB20}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="note-011" ID="{6A034D24-2152-473A-9CFF-6BFEDF9F3DD2}" ShortID="402539834">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="note-011" ID="{4548995C-151D-4F58-A118-C19C85F0C61D}" ShortID="808834375">
+															<Language>SFX</Language>
+															<AudioFile>note-011.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="note-011" ID="{4548995C-151D-4F58-A118-C19C85F0C61D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="note-013" ID="{AD7648EF-4F37-4170-84F8-851AD806668A}" ShortID="346422752">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>80</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="note-013" ID="{A0C5D471-5CE4-422B-9FDF-C533F322B743}" ShortID="962174037">
+															<Language>SFX</Language>
+															<AudioFile>note-013.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="note-013" ID="{A0C5D471-5CE4-422B-9FDF-C533F322B743}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="note-014" ID="{65B2679F-C4DD-43A7-A73D-5583405E3A7E}" ShortID="1002372984">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>100</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="note-014" ID="{44E1549D-A874-4911-BF3A-1B7192327A31}" ShortID="532653456">
+															<Language>SFX</Language>
+															<AudioFile>note-014.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="703624148"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="note-014" ID="{44E1549D-A874-4911-BF3A-1B7192327A31}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="note-002" ID="{D84C4DD3-155F-4AEC-BC66-C81EA5C719B0}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="note-004" ID="{F62200B8-DA42-4546-872A-DC1B5EF07EB3}" ShortID="448908093">
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="notes do" ID="{68A8D254-20B7-4FBA-AC3B-F4357C6481BE}" ShortID="195069180">
 											<PropertyList>
-												<Property Name="Weight" Type="Real64">
-													<ValueList>
-														<Value>60</Value>
-													</ValueList>
-												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+													<ObjectRef Name="pizz" ID="{7BB8FF51-545C-4A65-8DAE-4F8856B978B6}" WorkUnitID="{ACE1B6E7-43F6-4A29-982A-55CA397C8F02}"/>
+												</Reference>
+												<Reference Name="Effect1" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+													<ObjectRef Name="pizzdel" ID="{3C5D2658-A82C-44E0-9BED-09C624105554}" WorkUnitID="{ACE1B6E7-43F6-4A29-982A-55CA397C8F02}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="note-004" ID="{FACFEC5F-1AED-4977-857E-FD935215CE15}" ShortID="972524167">
-													<Language>SFX</Language>
-													<AudioFile>note-004.wav</AudioFile>
-												</AudioFileSource>
+												<Sound Name="note-005" ID="{6997859F-FDFB-4AAB-A514-FB8C5CFB6CA5}" ShortID="314839666">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+														</Reference>
+														<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+															<ObjectRef Name="pizz" ID="{7BB8FF51-545C-4A65-8DAE-4F8856B978B6}" WorkUnitID="{ACE1B6E7-43F6-4A29-982A-55CA397C8F02}"/>
+														</Reference>
+														<Reference Name="Effect1" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+															<ObjectRef Name="pizzdel" ID="{3C5D2658-A82C-44E0-9BED-09C624105554}" WorkUnitID="{ACE1B6E7-43F6-4A29-982A-55CA397C8F02}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="note-005" ID="{EB765423-7BD8-4F99-9147-0933DF9520E3}" ShortID="931783179">
+															<Language>SFX</Language>
+															<AudioFile>note-005.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="note-005" ID="{EB765423-7BD8-4F99-9147-0933DF9520E3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="note-007" ID="{4590BBD0-9473-4625-B12B-505312F0A0A4}" ShortID="186803910">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>20</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+														</Reference>
+														<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+															<ObjectRef Name="pizz" ID="{7BB8FF51-545C-4A65-8DAE-4F8856B978B6}" WorkUnitID="{ACE1B6E7-43F6-4A29-982A-55CA397C8F02}"/>
+														</Reference>
+														<Reference Name="Effect1" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+															<ObjectRef Name="pizzdel" ID="{3C5D2658-A82C-44E0-9BED-09C624105554}" WorkUnitID="{ACE1B6E7-43F6-4A29-982A-55CA397C8F02}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="note-007" ID="{9FD220E4-F185-4757-9508-9350EC51643B}" ShortID="566371726">
+															<Language>SFX</Language>
+															<AudioFile>note-007.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="note-007" ID="{9FD220E4-F185-4757-9508-9350EC51643B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="note-003" ID="{AB660D3A-3AA1-4DF7-933B-70907B313FB9}" ShortID="678182383">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+														</Reference>
+														<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+															<ObjectRef Name="pizz" ID="{7BB8FF51-545C-4A65-8DAE-4F8856B978B6}" WorkUnitID="{ACE1B6E7-43F6-4A29-982A-55CA397C8F02}"/>
+														</Reference>
+														<Reference Name="Effect1" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+															<ObjectRef Name="pizzdel" ID="{3C5D2658-A82C-44E0-9BED-09C624105554}" WorkUnitID="{ACE1B6E7-43F6-4A29-982A-55CA397C8F02}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="note-003" ID="{6F0BAD95-2581-4D2B-B7F6-658358938AB2}" ShortID="570353810">
+															<Language>SFX</Language>
+															<AudioFile>note-003.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="note-003" ID="{6F0BAD95-2581-4D2B-B7F6-658358938AB2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="note-001" ID="{0E2E543C-435E-4758-BD3E-42AA5F866F46}" ShortID="392651901">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+														</Reference>
+														<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+															<ObjectRef Name="pizz" ID="{7BB8FF51-545C-4A65-8DAE-4F8856B978B6}" WorkUnitID="{ACE1B6E7-43F6-4A29-982A-55CA397C8F02}"/>
+														</Reference>
+														<Reference Name="Effect1" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+															<ObjectRef Name="pizzdel" ID="{3C5D2658-A82C-44E0-9BED-09C624105554}" WorkUnitID="{ACE1B6E7-43F6-4A29-982A-55CA397C8F02}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="note-001" ID="{3BB565FC-3B1C-4AFC-A42A-67A75BBB126C}" ShortID="1019876551">
+															<Language>SFX</Language>
+															<AudioFile>note-001.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="note-001" ID="{3BB565FC-3B1C-4AFC-A42A-67A75BBB126C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="note-008" ID="{6048988F-EF32-489B-A874-FDE02AEE3F5F}" ShortID="410004704">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+														</Reference>
+														<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+															<ObjectRef Name="pizz" ID="{7BB8FF51-545C-4A65-8DAE-4F8856B978B6}" WorkUnitID="{ACE1B6E7-43F6-4A29-982A-55CA397C8F02}"/>
+														</Reference>
+														<Reference Name="Effect1" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+															<ObjectRef Name="pizzdel" ID="{3C5D2658-A82C-44E0-9BED-09C624105554}" WorkUnitID="{ACE1B6E7-43F6-4A29-982A-55CA397C8F02}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="note-008" ID="{CDF972B7-078E-4B6D-93C7-3DC9CE88DE7F}" ShortID="370569786">
+															<Language>SFX</Language>
+															<AudioFile>note-008.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="note-008" ID="{CDF972B7-078E-4B6D-93C7-3DC9CE88DE7F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="note-010" ID="{CEFAA651-9EAE-4C44-AAF7-F861BAF0B1C0}" ShortID="803221587">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+														</Reference>
+														<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+															<ObjectRef Name="pizz" ID="{7BB8FF51-545C-4A65-8DAE-4F8856B978B6}" WorkUnitID="{ACE1B6E7-43F6-4A29-982A-55CA397C8F02}"/>
+														</Reference>
+														<Reference Name="Effect1" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+															<ObjectRef Name="pizzdel" ID="{3C5D2658-A82C-44E0-9BED-09C624105554}" WorkUnitID="{ACE1B6E7-43F6-4A29-982A-55CA397C8F02}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="note-010" ID="{64AFC878-332F-4C46-BED6-82256E06B4C4}" ShortID="421266472">
+															<Language>SFX</Language>
+															<AudioFile>note-010.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="note-010" ID="{64AFC878-332F-4C46-BED6-82256E06B4C4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="note-012" ID="{E5B96077-BB90-4B5F-8449-97816458577B}" ShortID="279144576">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+														</Reference>
+														<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+															<ObjectRef Name="pizz" ID="{7BB8FF51-545C-4A65-8DAE-4F8856B978B6}" WorkUnitID="{ACE1B6E7-43F6-4A29-982A-55CA397C8F02}"/>
+														</Reference>
+														<Reference Name="Effect1" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+															<ObjectRef Name="pizzdel" ID="{3C5D2658-A82C-44E0-9BED-09C624105554}" WorkUnitID="{ACE1B6E7-43F6-4A29-982A-55CA397C8F02}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="note-012" ID="{CBDB7187-AB77-488A-958B-F6B65AA8681D}" ShortID="550773475">
+															<Language>SFX</Language>
+															<AudioFile>note-012.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="note-012" ID="{CBDB7187-AB77-488A-958B-F6B65AA8681D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="note-004" ID="{FACFEC5F-1AED-4977-857E-FD935215CE15}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="note-006" ID="{7A85DE52-349F-4DC2-A176-0A22E01F83BD}" ShortID="259155492">
-											<PropertyList>
-												<Property Name="Weight" Type="Real64">
-													<ValueList>
-														<Value>60</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="note-006" ID="{A47928DB-86A8-45B0-9988-368124FDCF1F}" ShortID="228508597">
-													<Language>SFX</Language>
-													<AudioFile>note-006.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="note-006" ID="{A47928DB-86A8-45B0-9988-368124FDCF1F}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="note-009" ID="{72920F73-8F37-40D3-9FE9-F489CDF57BF5}" ShortID="236266248">
-											<PropertyList>
-												<Property Name="Weight" Type="Real64">
-													<ValueList>
-														<Value>60</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="note-009" ID="{B5D89A8E-514D-496F-81BD-BE21DF56AB20}" ShortID="94374783">
-													<Language>SFX</Language>
-													<AudioFile>note-009.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="note-009" ID="{B5D89A8E-514D-496F-81BD-BE21DF56AB20}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="note-011" ID="{6A034D24-2152-473A-9CFF-6BFEDF9F3DD2}" ShortID="402539834">
-											<PropertyList>
-												<Property Name="Weight" Type="Real64">
-													<ValueList>
-														<Value>60</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="note-011" ID="{4548995C-151D-4F58-A118-C19C85F0C61D}" ShortID="808834375">
-													<Language>SFX</Language>
-													<AudioFile>note-011.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="note-011" ID="{4548995C-151D-4F58-A118-C19C85F0C61D}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="note-013" ID="{AD7648EF-4F37-4170-84F8-851AD806668A}" ShortID="346422752">
-											<PropertyList>
-												<Property Name="Weight" Type="Real64">
-													<ValueList>
-														<Value>80</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="note-013" ID="{A0C5D471-5CE4-422B-9FDF-C533F322B743}" ShortID="962174037">
-													<Language>SFX</Language>
-													<AudioFile>note-013.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="note-013" ID="{A0C5D471-5CE4-422B-9FDF-C533F322B743}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="note-014" ID="{65B2679F-C4DD-43A7-A73D-5583405E3A7E}" ShortID="1002372984">
-											<PropertyList>
-												<Property Name="Weight" Type="Real64">
-													<ValueList>
-														<Value>90</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="note-014" ID="{44E1549D-A874-4911-BF3A-1B7192327A31}" ShortID="532653456">
-													<Language>SFX</Language>
-													<AudioFile>note-014.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="703624148"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="note-014" ID="{44E1549D-A874-4911-BF3A-1B7192327A31}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="note-007" ID="{4590BBD0-9473-4625-B12B-505312F0A0A4}" ShortID="186803910">
-											<PropertyList>
-												<Property Name="Weight" Type="Real64">
-													<ValueList>
-														<Value>20</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="note-007" ID="{9FD220E4-F185-4757-9508-9350EC51643B}" ShortID="566371726">
-													<Language>SFX</Language>
-													<AudioFile>note-007.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="note-007" ID="{9FD220E4-F185-4757-9508-9350EC51643B}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="note-008" ID="{6048988F-EF32-489B-A874-FDE02AEE3F5F}" ShortID="410004704">
-											<PropertyList>
-												<Property Name="Weight" Type="Real64">
-													<ValueList>
-														<Value>20</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="note-008" ID="{CDF972B7-078E-4B6D-93C7-3DC9CE88DE7F}" ShortID="370569786">
-													<Language>SFX</Language>
-													<AudioFile>note-008.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="note-008" ID="{CDF972B7-078E-4B6D-93C7-3DC9CE88DE7F}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="note-010" ID="{CEFAA651-9EAE-4C44-AAF7-F861BAF0B1C0}" ShortID="803221587">
-											<PropertyList>
-												<Property Name="Weight" Type="Real64">
-													<ValueList>
-														<Value>20</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="note-010" ID="{64AFC878-332F-4C46-BED6-82256E06B4C4}" ShortID="421266472">
-													<Language>SFX</Language>
-													<AudioFile>note-010.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="note-010" ID="{64AFC878-332F-4C46-BED6-82256E06B4C4}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="note-012" ID="{E5B96077-BB90-4B5F-8449-97816458577B}" ShortID="279144576">
-											<PropertyList>
-												<Property Name="Weight" Type="Real64">
-													<ValueList>
-														<Value>20</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="note-012" ID="{CBDB7187-AB77-488A-958B-F6B65AA8681D}" ShortID="550773475">
-													<Language>SFX</Language>
-													<AudioFile>note-012.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="note-012" ID="{CBDB7187-AB77-488A-958B-F6B65AA8681D}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="note-001" ID="{0E2E543C-435E-4758-BD3E-42AA5F866F46}" ShortID="392651901">
-											<PropertyList>
-												<Property Name="Weight" Type="Real64">
-													<ValueList>
-														<Value>20</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="note-001" ID="{3BB565FC-3B1C-4AFC-A42A-67A75BBB126C}" ShortID="1019876551">
-													<Language>SFX</Language>
-													<AudioFile>note-001.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="note-001" ID="{3BB565FC-3B1C-4AFC-A42A-67A75BBB126C}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="note-003" ID="{AB660D3A-3AA1-4DF7-933B-70907B313FB9}" ShortID="678182383">
-											<PropertyList>
-												<Property Name="Weight" Type="Real64">
-													<ValueList>
-														<Value>20</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="note-003" ID="{6F0BAD95-2581-4D2B-B7F6-658358938AB2}" ShortID="570353810">
-													<Language>SFX</Language>
-													<AudioFile>note-003.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="note-003" ID="{6F0BAD95-2581-4D2B-B7F6-658358938AB2}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="note-005" ID="{6997859F-FDFB-4AAB-A514-FB8C5CFB6CA5}" ShortID="314839666">
-											<PropertyList>
-												<Property Name="Weight" Type="Real64">
-													<ValueList>
-														<Value>20</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="note-005" ID="{EB765423-7BD8-4F99-9147-0933DF9520E3}" ShortID="931783179">
-													<Language>SFX</Language>
-													<AudioFile>note-005.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="note-005" ID="{EB765423-7BD8-4F99-9147-0933DF9520E3}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
+										</RandomSequenceContainer>
 									</ChildrenList>
+									<Playlist>
+										<ItemRef Name="notes ré" ID="{1D6F7DCD-C181-4288-8377-20342BB2143B}"/>
+										<ItemRef Name="notes ré" ID="{1D6F7DCD-C181-4288-8377-20342BB2143B}"/>
+										<ItemRef Name="notes ré" ID="{1D6F7DCD-C181-4288-8377-20342BB2143B}"/>
+										<ItemRef Name="notes ré" ID="{1D6F7DCD-C181-4288-8377-20342BB2143B}"/>
+										<ItemRef Name="notes ré" ID="{1D6F7DCD-C181-4288-8377-20342BB2143B}"/>
+										<ItemRef Name="notes ré" ID="{1D6F7DCD-C181-4288-8377-20342BB2143B}"/>
+										<ItemRef Name="notes ré" ID="{1D6F7DCD-C181-4288-8377-20342BB2143B}"/>
+										<ItemRef Name="notes ré" ID="{1D6F7DCD-C181-4288-8377-20342BB2143B}"/>
+										<ItemRef Name="notes ré" ID="{1D6F7DCD-C181-4288-8377-20342BB2143B}"/>
+										<ItemRef Name="notes ré" ID="{1D6F7DCD-C181-4288-8377-20342BB2143B}"/>
+										<ItemRef Name="notes ré" ID="{1D6F7DCD-C181-4288-8377-20342BB2143B}"/>
+										<ItemRef Name="notes ré" ID="{1D6F7DCD-C181-4288-8377-20342BB2143B}"/>
+										<ItemRef Name="notes do" ID="{68A8D254-20B7-4FBA-AC3B-F4357C6481BE}"/>
+										<ItemRef Name="notes do" ID="{68A8D254-20B7-4FBA-AC3B-F4357C6481BE}"/>
+										<ItemRef Name="notes do" ID="{68A8D254-20B7-4FBA-AC3B-F4357C6481BE}"/>
+										<ItemRef Name="notes do" ID="{68A8D254-20B7-4FBA-AC3B-F4357C6481BE}"/>
+										<ItemRef Name="notes do" ID="{68A8D254-20B7-4FBA-AC3B-F4357C6481BE}"/>
+										<ItemRef Name="notes do" ID="{68A8D254-20B7-4FBA-AC3B-F4357C6481BE}"/>
+										<ItemRef Name="notes do" ID="{68A8D254-20B7-4FBA-AC3B-F4357C6481BE}"/>
+										<ItemRef Name="notes do" ID="{68A8D254-20B7-4FBA-AC3B-F4357C6481BE}"/>
+										<ItemRef Name="notes do" ID="{68A8D254-20B7-4FBA-AC3B-F4357C6481BE}"/>
+										<ItemRef Name="notes do" ID="{68A8D254-20B7-4FBA-AC3B-F4357C6481BE}"/>
+										<ItemRef Name="notes do" ID="{68A8D254-20B7-4FBA-AC3B-F4357C6481BE}"/>
+										<ItemRef Name="notes do" ID="{68A8D254-20B7-4FBA-AC3B-F4357C6481BE}"/>
+									</Playlist>
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</BlendContainer>

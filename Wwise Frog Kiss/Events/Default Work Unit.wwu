@@ -212,10 +212,24 @@
 						<Action Name="" ID="{6114D38A-0CD3-427D-AB69-4CA5720B3C2B}" ShortID="524843353">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="16"/>
+								<Property Name="FadeCurve" Type="int16" Value="0"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Musicmenu" ID="{76B7DA13-8587-4339-A43D-83EF80F3CBC5}" WorkUnitID="{24441BEA-7D03-40CF-9A6C-232D396C0874}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D30AB9C8-A802-459B-8AFE-C1027EB677D4}" ShortID="57004831">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="32.2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="menumusique" ID="{F9CB7A54-0F2A-473E-A5B0-1576524369BA}" WorkUnitID="{FDF87CCA-B268-48D5-965B-F36042191A27}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
