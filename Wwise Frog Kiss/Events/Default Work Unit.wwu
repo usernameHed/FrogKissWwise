@@ -124,9 +124,19 @@
 						<Action Name="" ID="{C58B344F-0A80-4C03-B1DC-3B60D724CBBF}" ShortID="866254760">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="3"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
 								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList/>
+							<ChildrenList>
+								<EventActionException Name="" ID="{EABA6B82-F110-476D-B1AD-381876FC709C}">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ambiance" ID="{9725918B-FB55-4F76-B50B-6B2A6AED7793}" WorkUnitID="{FDF87CCA-B268-48D5-965B-F36042191A27}"/>
+										</Reference>
+									</ReferenceList>
+								</EventActionException>
+							</ChildrenList>
 						</Action>
 					</ChildrenList>
 				</Event>
@@ -262,6 +272,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="New_Event" ID="{BF49BDA6-4F0A-402F-967D-C8F6C3AEB968}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
