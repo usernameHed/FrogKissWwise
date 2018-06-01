@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{ACE1B6E7-43F6-4A29-982A-55CA397C8F02}" SchemaVersion="85">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{ACE1B6E7-43F6-4A29-982A-55CA397C8F02}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{ACE1B6E7-43F6-4A29-982A-55CA397C8F02}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="pizz" ID="{7BB8FF51-545C-4A65-8DAE-4F8856B978B6}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+					<PropertyList>
+						<Property Name="AttackTime" Type="Real32" Value="0.32"/>
+						<Property Name="OutputGain" Type="Real32" Value="0.9"/>
+						<Property Name="Ratio" Type="Real32" Value="2.5"/>
+						<Property Name="ReleaseTime" Type="Real32" Value="0.24"/>
+						<Property Name="Threshold" Type="Real32" Value="-23.8"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="cordes" ID="{27F07812-5A7A-4E8B-8CF1-F087D05F9479}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
+						<Property Name="FrequencyBand2" Type="Real32" Value="548"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="4230"/>
+						<Property Name="GainBand2" Type="Real32" Value="-3.5"/>
+						<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="pizzdel" ID="{3C5D2658-A82C-44E0-9BED-09C624105554}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+					<PropertyList>
+						<Property Name="Feedback" Type="Real32" Value="6"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="strings" ID="{13BD151D-28F4-4C79-B8A6-CEA26969F2BF}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+					<PropertyList>
+						<Property Name="OutputGain" Type="Real32" Value="7.9"/>
+						<Property Name="Ratio" Type="Real32" Value="5.9"/>
+						<Property Name="Threshold" Type="Real32" Value="-37.5"/>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>

@@ -43,6 +43,10 @@
 					<ShortName>pas_dur-007.wav</ShortName>
 					<Path>SFX\pas_dur-007_1C9C67B2.wem</Path>
 				</File>
+				<File Id="94374783" Language="SFX">
+					<ShortName>note-009.wav</ShortName>
+					<Path>SFX\note-009_1C9C67B2.wem</Path>
+				</File>
 				<File Id="99459058" Language="SFX">
 					<ShortName>pas_dur-008.wav</ShortName>
 					<Path>SFX\pas_dur-008_1C9C67B2.wem</Path>
@@ -75,6 +79,10 @@
 					<ShortName>pas_feuilles-003.wav</ShortName>
 					<Path>SFX\pas_feuilles-003_1C9C67B2.wem</Path>
 				</File>
+				<File Id="228508597" Language="SFX">
+					<ShortName>note-006.wav</ShortName>
+					<Path>SFX\note-006_1C9C67B2.wem</Path>
+				</File>
 				<File Id="233355183" Language="SFX">
 					<ShortName>pas_dur-003.wav</ShortName>
 					<Path>SFX\pas_dur-003_1C9C67B2.wem</Path>
@@ -91,6 +99,10 @@
 					<ShortName>pas_dur-010.wav</ShortName>
 					<Path>SFX\pas_dur-010_1C9C67B2.wem</Path>
 				</File>
+				<File Id="370569786" Language="SFX">
+					<ShortName>note-008.wav</ShortName>
+					<Path>SFX\note-008_1C9C67B2.wem</Path>
+				</File>
 				<File Id="387503229" Language="SFX">
 					<ShortName>Danse.wav</ShortName>
 					<Path>SFX\Danse_F17FB28C.wem</Path>
@@ -98,6 +110,10 @@
 				<File Id="405364222" Language="SFX">
 					<ShortName>cuicui-003.wav</ShortName>
 					<Path>SFX\cuicui-003_1C9C67B2.wem</Path>
+				</File>
+				<File Id="421266472" Language="SFX">
+					<ShortName>note-010.wav</ShortName>
+					<Path>SFX\note-010_1C9C67B2.wem</Path>
 				</File>
 				<File Id="447919821" Language="SFX">
 					<ShortName>cuicui-004.wav</ShortName>
@@ -111,9 +127,25 @@
 					<ShortName>pas_feuilles-010.wav</ShortName>
 					<Path>SFX\pas_feuilles-010_1C9C67B2.wem</Path>
 				</File>
+				<File Id="543215213" Language="SFX">
+					<ShortName>note-002.wav</ShortName>
+					<Path>SFX\note-002_1C9C67B2.wem</Path>
+				</File>
+				<File Id="550773475" Language="SFX">
+					<ShortName>note-012.wav</ShortName>
+					<Path>SFX\note-012_1C9C67B2.wem</Path>
+				</File>
 				<File Id="559635689" Language="SFX">
 					<ShortName>pas_dur-006.wav</ShortName>
 					<Path>SFX\pas_dur-006_1C9C67B2.wem</Path>
+				</File>
+				<File Id="566371726" Language="SFX">
+					<ShortName>note-007.wav</ShortName>
+					<Path>SFX\note-007_1C9C67B2.wem</Path>
+				</File>
+				<File Id="570353810" Language="SFX">
+					<ShortName>note-003.wav</ShortName>
+					<Path>SFX\note-003_1C9C67B2.wem</Path>
 				</File>
 				<File Id="631898275" Language="SFX">
 					<ShortName>pas_feuilles-002.wav</ShortName>
@@ -127,13 +159,13 @@
 					<ShortName>pas_dur-009.wav</ShortName>
 					<Path>SFX\pas_dur-009_1C9C67B2.wem</Path>
 				</File>
+				<File Id="703624148" Language="SFX">
+					<ShortName>note-014.wav</ShortName>
+					<Path>SFX\note-014_1C9C67B2.wem</Path>
+				</File>
 				<File Id="704683832" Language="SFX">
 					<ShortName>pas_feuilles-007.wav</ShortName>
 					<Path>SFX\pas_feuilles-007_1C9C67B2.wem</Path>
-				</File>
-				<File Id="741145507" Language="SFX">
-					<ShortName>menu_validation.wav</ShortName>
-					<Path>SFX\menu_validation_1C9C67B2.wem</Path>
 				</File>
 				<File Id="757589686" Language="SFX">
 					<ShortName>pas_dur-004.wav</ShortName>
@@ -155,6 +187,10 @@
 					<ShortName>cuicui-002.wav</ShortName>
 					<Path>SFX\cuicui-002_1C9C67B2.wem</Path>
 				</File>
+				<File Id="808834375" Language="SFX">
+					<ShortName>note-011.wav</ShortName>
+					<Path>SFX\note-011_1C9C67B2.wem</Path>
+				</File>
 				<File Id="817443228" Language="SFX">
 					<ShortName>cuicui-007.wav</ShortName>
 					<Path>SFX\cuicui-007_1C9C67B2.wem</Path>
@@ -163,9 +199,9 @@
 					<ShortName>pas_dur-002.wav</ShortName>
 					<Path>SFX\pas_dur-002_1C9C67B2.wem</Path>
 				</File>
-				<File Id="944999725" Language="SFX">
-					<ShortName>placeholdermenu.wav</ShortName>
-					<Path>SFX\placeholdermenu_F17FB28C.wem</Path>
+				<File Id="931783179" Language="SFX">
+					<ShortName>note-005.wav</ShortName>
+					<Path>SFX\note-005_1C9C67B2.wem</Path>
 				</File>
 				<File Id="950020302" Language="SFX">
 					<ShortName>pas_feuilles-005.wav</ShortName>
@@ -174,6 +210,22 @@
 				<File Id="955035148" Language="SFX">
 					<ShortName>cuicui-006.wav</ShortName>
 					<Path>SFX\cuicui-006_1C9C67B2.wem</Path>
+				</File>
+				<File Id="962174037" Language="SFX">
+					<ShortName>note-013.wav</ShortName>
+					<Path>SFX\note-013_1C9C67B2.wem</Path>
+				</File>
+				<File Id="972524167" Language="SFX">
+					<ShortName>note-004.wav</ShortName>
+					<Path>SFX\note-004_1C9C67B2.wem</Path>
+				</File>
+				<File Id="1019876551" Language="SFX">
+					<ShortName>note-001.wav</ShortName>
+					<Path>SFX\note-001_1C9C67B2.wem</Path>
+				</File>
+				<File Id="1028359975" Language="SFX">
+					<ShortName>menumusicloop.wav</ShortName>
+					<Path>SFX\menumusicloop_F17FB28C.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

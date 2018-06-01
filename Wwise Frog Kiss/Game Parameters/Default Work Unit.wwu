@@ -18,6 +18,7 @@
 						<Property Name="InitialValue" Type="Real64" Value="100"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="New_Game_Parameter" ID="{934B9D82-B0EF-4B7A-B52A-15EB3E718811}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

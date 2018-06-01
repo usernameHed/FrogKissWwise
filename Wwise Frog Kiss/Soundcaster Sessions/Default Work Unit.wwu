@@ -22,6 +22,14 @@
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="MenuMusic_Play" ID="{89BCA88E-C226-45EE-9E09-6EDFB2F58994}" WorkUnitID="{9F383271-D774-4D0B-AB5E-304080A2F4DA}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MenuMusic_stop" ID="{7E80B536-22B4-4FFE-82B2-0719690B02AB}" WorkUnitID="{9F383271-D774-4D0B-AB5E-304080A2F4DA}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_Jump" ID="{F7A5ACFF-2052-4A12-8618-72891FB4CBBC}" WorkUnitID="{9F383271-D774-4D0B-AB5E-304080A2F4DA}"/>
 							<Position X="3" Y="0"/>
 						</Module>
@@ -66,6 +74,10 @@
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Presence" ID="{E3B7811A-7B2F-490F-B44F-5FE51B468041}"/>
 							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="New_Game_Parameter" ID="{934B9D82-B0EF-4B7A-B52A-15EB3E718811}"/>
+							<Value>50</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="pas_dur_vol" ID="{BF6BA975-C282-4C0A-87A9-7ED786D8A021}"/>
