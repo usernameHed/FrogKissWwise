@@ -20,6 +20,13 @@
 						<Property Name="LfoWaveform" Type="int32" Value="2"/>
 					</PropertyList>
 				</ModulatorLfo>
+				<ModulatorLfo Name="blanchepointénoire" ID="{837FA0B8-3F8E-47DE-A374-18A9C49B80C9}" ShortID="687448272">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="0.25"/>
+						<Property Name="LfoPWM" Type="Real64" Value="75"/>
+						<Property Name="LfoWaveform" Type="int32" Value="2"/>
+					</PropertyList>
+				</ModulatorLfo>
 			</ChildrenList>
 		</WorkUnit>
 	</Modulators>

@@ -5,7 +5,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	2822502042	Play_pas			\Default Work Unit\Play_pas	
 	2837384057	Stop_Music			\Default Work Unit\Stop_Music	
 	2839405212	Stop_ambiance			\Default Work Unit\Stop_ambiance	
-	3050945240	New_Event			\Default Work Unit\New_Event	
 	3174479978	Play_ambiance			\Default Work Unit\Play_ambiance	
 	3250561749	Stop_Danse			\Default Work Unit\Stop_Danse	
 	3356756485	Collectible			\Default Work Unit\Collectible	
@@ -26,6 +25,7 @@ Effect plug-ins	ID	Name	Type				Notes
 	1743195080	pizz	Wwise Compressor			
 	2018987055	pizzdel	Wwise Delay			
 	2736179525	cordes	Wwise Parametric EQ			
+	3356756485	collectible	Wwise Parametric EQ			
 	3363523641	strings	Wwise Compressor			
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
@@ -35,7 +35,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	32673462	pas_dur-005	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\pas_dur-005_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\sfx 2D\jump\pas_dur-005		31716
 	37021032	pas_feuilles-006	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\pas_feuilles-006_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\sfx 2D\jump\pas_feuilles-006		35188
 	85305738	pas_dur-007	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\pas_dur-007_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\sfx 2D\pas\pas_dur\pas_dur-007		33312
-	94374783	note-009	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\note-009_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\sfx 2D\collectible\note-009		584908
+	94374783	note-009	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\note-009_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\musique menu\menumusique\musicmenu\notes ré\note-009		584908
 	99459058	pas_dur-008	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\pas_dur-008_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\sfx 2D\pas\pas_dur\pas_dur-008		36552
 	112924468	pas_feuilles-004	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\pas_feuilles-004_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\sfx 2D\pas\pas_feuilles\pas_feuilles-004		26712
 	138894188	cuicui-008	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\cuicui-008_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\Amiance\ambiance\cuicui\cuicui-008		444980
@@ -56,7 +56,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	447919821	cuicui-004	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\cuicui-004_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\Amiance\ambiance\cuicui\cuicui-004		348236
 	481280554	pas_dur-001	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\pas_dur-001_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\sfx 2D\jump\pas_dur-001		33752
 	500822886	pas_feuilles-010	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\pas_feuilles-010_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\sfx 2D\pas\pas_feuilles\pas_feuilles-010		28256
-	543215213	note-002	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\note-002_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\sfx 2D\collectible\note-002		705664
+	543215213	note-002	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\note-002_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\musique menu\menumusique\musicmenu\notes ré\note-002		705664
 	550773475	note-012	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\note-012_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\musique menu\menumusique\musicmenu\notes do\note-012		561040
 	559635689	pas_dur-006	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\pas_dur-006_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\sfx 2D\pas\pas_dur\pas_dur-006		31080
 	566371726	note-007	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\note-007_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\musique menu\menumusique\musicmenu\notes do\note-007		504080
@@ -71,10 +71,11 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	783118329	cuicui-010	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\cuicui-010_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\Amiance\ambiance\cuicui\cuicui-010		283684
 	804594351	pas_feuilles-001	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\pas_feuilles-001_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\sfx 2D\pas\pas_feuilles\pas_feuilles-001		22416
 	804761111	cuicui-002	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\cuicui-002_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\Amiance\ambiance\cuicui\cuicui-002		754172
-	808834375	note-011	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\note-011_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\sfx 2D\collectible\note-011		461300
+	808834375	note-011	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\note-011_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\musique menu\menumusique\musicmenu\notes ré\note-011		461300
 	817443228	cuicui-007	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\cuicui-007_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\Amiance\ambiance\cuicui\cuicui-007		435256
 	881775451	pas_dur-002	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\pas_dur-002_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\sfx 2D\pas\pas_dur\pas_dur-002		28980
 	931783179	note-005	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\note-005_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\musique menu\menumusique\musicmenu\notes do\note-005		478156
+	941510591	collectible	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\collectible_6C6B7BEB.wem		\Actor-Mixer Hierarchy\Frog Kiss\sfx 2D\collectible		108808
 	950020302	pas_feuilles-005	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\pas_feuilles-005_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\sfx 2D\pas\pas_feuilles\pas_feuilles-005		25940
 	955035148	cuicui-006	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\cuicui-006_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\Amiance\ambiance\cuicui\cuicui-006		609076
 	962174037	note-013	D:\GIT\FrogKissWwise\Wwise Frog Kiss\.cache\Windows\SFX\note-013_1C9C67B2.wem		\Actor-Mixer Hierarchy\Frog Kiss\musique menu\menumusique\musicmenu\notes ré\note-013		640140

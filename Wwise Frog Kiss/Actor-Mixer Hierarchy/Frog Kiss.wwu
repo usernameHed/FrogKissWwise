@@ -810,8 +810,13 @@
 								<Position Name="" ID="{6E5D879C-D2C7-4924-8FAE-485BDA7AAD22}"/>
 							</PositioningInfo>
 						</BlendContainer>
-						<RandomSequenceContainer Name="collectible" ID="{24054636-08B7-4A9E-B058-F9D55AB8E5FE}" ShortID="831886761">
+						<RandomSequenceContainer Name="collectible old" ID="{24054636-08B7-4A9E-B058-F9D55AB8E5FE}" ShortID="831886761">
 							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
 								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
 								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
@@ -918,6 +923,59 @@
 								<ItemRef Name="note-011" ID="{1A092A11-9A84-455F-82EB-A12EC2231B1E}"/>
 							</Playlist>
 						</RandomSequenceContainer>
+						<Sound Name="collectible" ID="{9591C866-1E1A-4100-91E7-060728AC2F74}" ShortID="640859972">
+							<PropertyList>
+								<Property Name="3DPositionSource" Type="int16" Value="0"/>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<ObjectRef Name="collectible" ID="{2D67368D-D013-4FED-9F54-F3F05DBDFD15}" WorkUnitID="{ACE1B6E7-43F6-4A29-982A-55CA397C8F02}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="collectible" ID="{C37465A3-038D-4750-BF00-7369C16A9A83}" ShortID="941510591">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.122094294770206"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.566381867406233"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>collectible.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{137091BE-AD86-4462-86BB-210C9BD2AD17}">
+									<ChildrenList>
+										<Path2D Name="collectible_Path" ID="{E91BB249-D5EC-4EDE-B6D0-7EA6CDEDDC0D}">
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>50</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="collectible" ID="{C37465A3-038D-4750-BF00-7369C16A9A83}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<PositioningInfo>
 						<Panner Name="" ID="{6236FDEC-750A-4252-85C4-D793588C9B56}">
@@ -1801,6 +1859,243 @@
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</BlendContainer>
+						<RandomSequenceContainer Name="basses sequence" ID="{CA8DEA52-4C6A-4F1D-9FD8-89BCF4B547DF}" ShortID="304418238">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="basses" ID="{4AB90509-6F3F-4E1E-8A76-160DA078A470}" ShortID="932948246">
+									<PropertyList>
+										<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismLoopCount" Type="int32" Value="8"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3">
+											<RTPCList>
+												<RTPC Name="" ID="{6B4038EF-E6DE-456D-B5B5-638970135C50}" ShortID="270746445">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="blanchepointénoire" ID="{837FA0B8-3F8E-47DE-A374-18A9C49B80C9}" WorkUnitID="{4BA36926-47DB-4799-A3B9-85D0D7576DC1}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{93555752-AFFF-4441-BDAC-E018E928511C}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>-2</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>9</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="note-013" ID="{9712340C-0E99-4161-B016-825B97164BCA}" ShortID="241146899">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-1200</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="note-013" ID="{68A38068-5FBF-4863-AA47-D2C757819266}" ShortID="307306043">
+													<Language>SFX</Language>
+													<AudioFile>note-013.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="962174037"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="note-013" ID="{68A38068-5FBF-4863-AA47-D2C757819266}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="note-014" ID="{83454C6F-C7C0-4582-9958-31970C48666E}" ShortID="809513019">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="note-014" ID="{F921FA30-D98D-49C6-BEF4-D92B9DBA69DC}" ShortID="868639821">
+													<Language>SFX</Language>
+													<AudioFile>note-014.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="703624148"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="note-014" ID="{F921FA30-D98D-49C6-BEF4-D92B9DBA69DC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<Playlist>
+										<ItemRef Name="note-014" ID="{83454C6F-C7C0-4582-9958-31970C48666E}"/>
+										<ItemRef Name="note-013" ID="{9712340C-0E99-4161-B016-825B97164BCA}"/>
+									</Playlist>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="bassesmute" ID="{31087CFA-564A-42EF-9429-A3CCBABCC701}" ShortID="539911909">
+									<PropertyList>
+										<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismLoopCount" Type="int32" Value="8"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3">
+											<RTPCList>
+												<RTPC Name="" ID="{7CF89234-DDBB-49C2-85F2-8512489F9648}" ShortID="400993498">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="blanchepointénoire" ID="{837FA0B8-3F8E-47DE-A374-18A9C49B80C9}" WorkUnitID="{4BA36926-47DB-4799-A3B9-85D0D7576DC1}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{CD4919D0-BC02-4F70-9405-4BB7945059B8}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>-2</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-96</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="note-013" ID="{AA3CC4E7-6FEB-4839-8E33-367D63B93496}" ShortID="360881856">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="note-013" ID="{6689B510-157E-4EFA-822B-9B113B0B114E}" ShortID="898270257">
+													<Language>SFX</Language>
+													<AudioFile>note-013.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="962174037"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="note-013" ID="{6689B510-157E-4EFA-822B-9B113B0B114E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="note-014" ID="{0A9AF416-FACE-4EC9-8009-277C7EE6E531}" ShortID="1016218100">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75FB60AC-0C31-4E02-B4DD-96B6B4574002}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BD75C167-58EB-4C75-A5CD-2B120D290B5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="note-014" ID="{8DE2B12E-5BA0-41F6-8683-66DB9CF4ACA5}" ShortID="175972076">
+													<Language>SFX</Language>
+													<AudioFile>note-014.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="703624148"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="note-014" ID="{8DE2B12E-5BA0-41F6-8683-66DB9CF4ACA5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<Playlist>
+										<ItemRef Name="note-014" ID="{0A9AF416-FACE-4EC9-8009-277C7EE6E531}"/>
+										<ItemRef Name="note-013" ID="{AA3CC4E7-6FEB-4839-8E33-367D63B93496}"/>
+									</Playlist>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="basses" ID="{4AB90509-6F3F-4E1E-8A76-160DA078A470}"/>
+								<ItemRef Name="bassesmute" ID="{31087CFA-564A-42EF-9429-A3CCBABCC701}"/>
+							</Playlist>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Win" ID="{B9C93733-AAAD-4FD6-8A74-6D09A3B7125F}" ShortID="712416197">

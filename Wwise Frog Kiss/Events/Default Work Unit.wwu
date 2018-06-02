@@ -11,7 +11,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="collectible" ID="{24054636-08B7-4A9E-B058-F9D55AB8E5FE}" WorkUnitID="{FDF87CCA-B268-48D5-965B-F36042191A27}"/>
+									<ObjectRef Name="collectible" ID="{9591C866-1E1A-4100-91E7-060728AC2F74}" WorkUnitID="{FDF87CCA-B268-48D5-965B-F36042191A27}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -272,7 +272,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="New_Event" ID="{BF49BDA6-4F0A-402F-967D-C8F6C3AEB968}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

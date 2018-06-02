@@ -8,6 +8,9 @@
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{683C9FE9-8B2C-4ACE-9C93-5CE5604B7936}" WorkUnitID="{B9038AE8-32AA-4CFF-A8AB-789989BA2301}"/>
 						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+							<ObjectRef Name="New_Wwise_Meter" ID="{A16F0E58-9E0F-4838-B89B-0DEAD8B758C8}" WorkUnitID="{ACE1B6E7-43F6-4A29-982A-55CA397C8F02}"/>
+						</Reference>
 					</ReferenceList>
 				</Bus>
 			</ChildrenList>

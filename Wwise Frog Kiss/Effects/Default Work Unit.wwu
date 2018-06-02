@@ -33,6 +33,21 @@
 						<Property Name="Threshold" Type="Real32" Value="-37.5"/>
 					</PropertyList>
 				</Effect>
+				<Effect Name="New_Wwise_Meter" ID="{A16F0E58-9E0F-4838-B89B-0DEAD8B758C8}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+					<PropertyList>
+						<Property Name="MeterMode" Type="int32" Value="1"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="collectible" ID="{2D67368D-D013-4FED-9F54-F3F05DBDFD15}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="460"/>
+						<Property Name="FrequencyBand2" Type="Real32" Value="462"/>
+						<Property Name="GainBand2" Type="Real32" Value="-3"/>
+						<Property Name="OnOffBand2" Type="bool" Value="False"/>
+						<Property Name="OnOffBand3" Type="bool" Value="False"/>
+					</PropertyList>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

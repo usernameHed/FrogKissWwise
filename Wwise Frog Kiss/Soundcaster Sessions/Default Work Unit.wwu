@@ -37,6 +37,10 @@
 							<ObjectRef Name="Play_pas" ID="{0460A050-41DF-4E01-9E5A-C2FD0399C2CB}" WorkUnitID="{9F383271-D774-4D0B-AB5E-304080A2F4DA}"/>
 							<Position X="3" Y="1"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Collectible" ID="{A6685703-1413-4ECB-B3FF-EDB44743296D}" WorkUnitID="{9F383271-D774-4D0B-AB5E-304080A2F4DA}"/>
+							<Position X="3" Y="2"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>

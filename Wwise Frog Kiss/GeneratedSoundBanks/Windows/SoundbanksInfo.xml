@@ -19,7 +19,6 @@
 				<Event Id="3356756485" Name="Collectible" ObjectPath="\Events\Default Work Unit\Collectible"/>
 				<Event Id="4011733850" Name="MenuMusic_Play" ObjectPath="\Events\Default Work Unit\MenuMusic_Play"/>
 				<Event Id="1115745636" Name="MenuMusic_stop" ObjectPath="\Events\Default Work Unit\MenuMusic_stop"/>
-				<Event Id="3050945240" Name="New_Event" ObjectPath="\Events\Default Work Unit\New_Event"/>
 				<Event Id="3174479978" Name="Play_ambiance" ObjectPath="\Events\Default Work Unit\Play_ambiance"/>
 				<Event Id="64860570" Name="Play_BackHome" ObjectPath="\Events\Default Work Unit\Play_BackHome"/>
 				<Event Id="3922864755" Name="Play_Danse" ObjectPath="\Events\Default Work Unit\Play_Danse"/>
@@ -203,6 +202,10 @@
 				<File Id="931783179" Language="SFX">
 					<ShortName>note-005.wav</ShortName>
 					<Path>SFX\note-005_1C9C67B2.wem</Path>
+				</File>
+				<File Id="941510591" Language="SFX">
+					<ShortName>collectible.wav</ShortName>
+					<Path>SFX\collectible_6C6B7BEB.wem</Path>
 				</File>
 				<File Id="950020302" Language="SFX">
 					<ShortName>pas_feuilles-005.wav</ShortName>
