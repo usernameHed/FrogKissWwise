@@ -22,31 +22,24 @@
 						<Action Name="" ID="{23C9F3B5-6FE8-4445-A1BD-E91E694A3FD6}" ShortID="329922781">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeCurve" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
 								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="BackHome" ID="{13FBC876-890F-47E6-99EF-09C981096102}" WorkUnitID="{24441BEA-7D03-40CF-9A6C-232D396C0874}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{4B54BB30-5EDE-45AB-AB87-86EEE8E36BAC}" ShortID="128252524">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="22"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="MusicNoLoop" ID="{DB2CAF2F-8E6D-48AC-82B4-C1D1DA41665E}" WorkUnitID="{E6C31DEA-BA1A-49C4-AE4E-50F36A9AE479}"/>
+									<ObjectRef Name="Back Home" ID="{BBD27742-8589-4B47-B295-D5B5805786B6}" WorkUnitID="{24441BEA-7D03-40CF-9A6C-232D396C0874}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 						<Action Name="" ID="{1D916B36-C550-47A3-92EE-412186E2BD62}" ShortID="587536403">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Danse" ID="{D503C71C-264A-4FC0-9542-5A7E793E7269}" WorkUnitID="{24441BEA-7D03-40CF-9A6C-232D396C0874}"/>
+									<ObjectRef Name="Danse" ID="{F04ECDF6-5011-42B0-B3B0-CBFDDB039C04}" WorkUnitID="{24441BEA-7D03-40CF-9A6C-232D396C0874}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -69,23 +62,13 @@
 				</Event>
 				<Event Name="Play_BackHome" ID="{38EAFC51-822D-4847-AD96-593527318CF3}">
 					<ChildrenList>
-						<Action Name="" ID="{51C66FC6-EF4E-4C56-B185-B8D3E400F938}" ShortID="118573020">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="22"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="MusicNoLoop" ID="{DB2CAF2F-8E6D-48AC-82B4-C1D1DA41665E}" WorkUnitID="{E6C31DEA-BA1A-49C4-AE4E-50F36A9AE479}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 						<Action Name="" ID="{EBA0C13F-1585-4C66-9D20-008811AB5F6F}" ShortID="597415886">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="BackHome" ID="{13FBC876-890F-47E6-99EF-09C981096102}" WorkUnitID="{24441BEA-7D03-40CF-9A6C-232D396C0874}"/>
+									<ObjectRef Name="Back Home" ID="{BBD27742-8589-4B47-B295-D5B5805786B6}" WorkUnitID="{24441BEA-7D03-40CF-9A6C-232D396C0874}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

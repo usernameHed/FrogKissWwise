@@ -53,7 +53,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="bird_time" ID="{E28196F2-2CE0-441D-9A81-4D612513D26E}"/>
-							<Value>0</Value>
+							<Value>73</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Month" ID="{09E2B445-C4A3-447F-B3CA-818A1D925EF7}"/>

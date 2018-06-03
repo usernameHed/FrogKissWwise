@@ -65,8 +65,19 @@
 						</Sound>
 						<BlendContainer Name="jump" ID="{68B4DEEE-7508-43FA-9570-FC8B389FE4A5}" ShortID="60122410">
 							<PropertyList>
+								<Property Name="DivergenceCenter" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
 								<Property Name="EnablePositioning" Type="bool" Value="False"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Spatialization" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -267,11 +278,6 @@
 								</Sound>
 								<Sound Name="pas_dur-005" ID="{033EA0CF-7906-4404-A35A-8F2DCDAA4311}" ShortID="654487939">
 									<PropertyList>
-										<Property Name="InitialDelay" Type="Real64">
-											<ValueList>
-												<Value>0.02</Value>
-											</ValueList>
-										</Property>
 										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="Spatialization" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
@@ -334,13 +340,24 @@
 								</Sound>
 							</ChildrenList>
 							<PositioningInfo>
+								<Panner Name="" ID="{996F29F9-1414-4157-89B1-98A72C354183}"/>
 								<Position Name="" ID="{859D1623-4200-4760-AE87-13A18519A303}"/>
 							</PositioningInfo>
 						</BlendContainer>
 						<BlendContainer Name="pas" ID="{12F54DCB-5D19-41E5-A2C5-33FB10D52137}" ShortID="212561402">
 							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>29</Value>
+									</ValueList>
+								</Property>
 								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="Spatialization" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
