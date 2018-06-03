@@ -59,6 +59,10 @@
 					<ShortName>cuicui-008.wav</ShortName>
 					<Path>SFX\cuicui-008_1C9C67B2.wem</Path>
 				</File>
+				<File Id="149402462" Language="SFX">
+					<ShortName>Danse.wav</ShortName>
+					<Path>SFX\Danse_F17FB28C.wem</Path>
+				</File>
 				<File Id="160158282" Language="SFX">
 					<ShortName>amb_loop_1.wav</ShortName>
 					<Path>SFX\amb_loop_1_F17FB28C.wem</Path>
@@ -87,13 +91,13 @@
 					<ShortName>pas_dur-003.wav</ShortName>
 					<Path>SFX\pas_dur-003_1C9C67B2.wem</Path>
 				</File>
+				<File Id="261859669" Language="SFX">
+					<ShortName>Back Home.wav</ShortName>
+					<Path>SFX\Back Home_F17FB28C.wem</Path>
+				</File>
 				<File Id="276720773" Language="SFX">
 					<ShortName>cuicui-005.wav</ShortName>
 					<Path>SFX\cuicui-005_1C9C67B2.wem</Path>
-				</File>
-				<File Id="306829803" Language="SFX">
-					<ShortName>Back Home.wav</ShortName>
-					<Path>SFX\Back Home_F17FB28C.wem</Path>
 				</File>
 				<File Id="336407299" Language="SFX">
 					<ShortName>pas_dur-010.wav</ShortName>
@@ -102,10 +106,6 @@
 				<File Id="370569786" Language="SFX">
 					<ShortName>note-008.wav</ShortName>
 					<Path>SFX\note-008_1C9C67B2.wem</Path>
-				</File>
-				<File Id="387503229" Language="SFX">
-					<ShortName>Danse.wav</ShortName>
-					<Path>SFX\Danse_F17FB28C.wem</Path>
 				</File>
 				<File Id="405364222" Language="SFX">
 					<ShortName>cuicui-003.wav</ShortName>

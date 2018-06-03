@@ -131,7 +131,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="BackHome" ID="{13FBC876-890F-47E6-99EF-09C981096102}" WorkUnitID="{24441BEA-7D03-40CF-9A6C-232D396C0874}"/>
+									<ObjectRef Name="Back Home" ID="{BBD27742-8589-4B47-B295-D5B5805786B6}" WorkUnitID="{24441BEA-7D03-40CF-9A6C-232D396C0874}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -145,7 +145,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Danse" ID="{D503C71C-264A-4FC0-9542-5A7E793E7269}" WorkUnitID="{24441BEA-7D03-40CF-9A6C-232D396C0874}"/>
+									<ObjectRef Name="Danse" ID="{F04ECDF6-5011-42B0-B3B0-CBFDDB039C04}" WorkUnitID="{24441BEA-7D03-40CF-9A6C-232D396C0874}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -173,7 +173,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="BackHome" ID="{13FBC876-890F-47E6-99EF-09C981096102}" WorkUnitID="{24441BEA-7D03-40CF-9A6C-232D396C0874}"/>
+									<ObjectRef Name="Back Home" ID="{BBD27742-8589-4B47-B295-D5B5805786B6}" WorkUnitID="{24441BEA-7D03-40CF-9A6C-232D396C0874}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -183,7 +183,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Danse" ID="{D503C71C-264A-4FC0-9542-5A7E793E7269}" WorkUnitID="{24441BEA-7D03-40CF-9A6C-232D396C0874}"/>
+									<ObjectRef Name="Danse" ID="{F04ECDF6-5011-42B0-B3B0-CBFDDB039C04}" WorkUnitID="{24441BEA-7D03-40CF-9A6C-232D396C0874}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
